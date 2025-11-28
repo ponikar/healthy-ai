@@ -8,7 +8,7 @@ export const decideComponents = new DynamicStructuredTool({
 	description: "Analyze user query and decide which Shadcn components to use.",
 	schema: z.object({
 		query: z.string().describe("User's UI generation request"),
-		payload: z.object(z.string()).describe("Additional data/configuration"),
+		payload: z.object({}).describe("Additional data/configuration"),
 	}),
 	func: async (input) => {
 		const { query, payload } = decideComponents.schema.parse(input);
