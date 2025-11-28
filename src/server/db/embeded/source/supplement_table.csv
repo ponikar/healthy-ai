@@ -1,0 +1,2451 @@
+supplement_id,disease_id,supplement_name,unit
+10001,1,Paracetamol 500mg,tablet
+10002,1,Paracetamol 650mg,tablet
+10003,1,ORS Sachet,sachet
+10004,1,IV Normal Saline 0.9%,liter
+10005,1,IV Ringer Lactate,liter
+10006,1,IV Dextrose 5%,liter
+10007,1,Ibuprofen 400mg,tablet
+10008,1,Cetirizine 10mg,tablet
+10009,1,Azithromycin 500mg,tablet
+10010,1,Doxycycline 100mg,tablet
+10011,1,Amoxicillin 500mg,capsule
+10012,1,N95 Mask,piece
+10013,1,Surgical Mask,piece
+10014,1,Gloves (Latex),pair
+10015,1,Sanitizer 100ml,bottle
+10016,1,Bandage Roll,piece
+10017,1,Gauze Pack,pack
+10018,1,Syringe 5ml,piece
+10019,1,Syringe 10ml,piece
+10020,1,IV Cannula,piece
+10021,1,ORS Electrolyte Powder,sachet
+10022,1,Inhaler - Salbutamol,unit
+10023,1,Nebulizer Solution,ampoule
+10024,1,Antacid Liquid,bottle
+10025,1,Zinc Tablets,tablet
+10026,2,Paracetamol 500mg,tablet
+10027,2,Paracetamol 650mg,tablet
+10028,2,ORS Sachet,sachet
+10029,2,IV Normal Saline 0.9%,liter
+10030,2,IV Ringer Lactate,liter
+10031,2,IV Dextrose 5%,liter
+10032,2,Ibuprofen 400mg,tablet
+10033,2,Cetirizine 10mg,tablet
+10034,2,Azithromycin 500mg,tablet
+10035,2,Doxycycline 100mg,tablet
+10036,2,Amoxicillin 500mg,capsule
+10037,2,N95 Mask,piece
+10038,2,Surgical Mask,piece
+10039,2,Gloves (Latex),pair
+10040,2,Sanitizer 100ml,bottle
+10041,2,Bandage Roll,piece
+10042,2,Gauze Pack,pack
+10043,2,Syringe 5ml,piece
+10044,2,Syringe 10ml,piece
+10045,2,IV Cannula,piece
+10046,2,ORS Electrolyte Powder,sachet
+10047,2,Inhaler - Salbutamol,unit
+10048,2,Nebulizer Solution,ampoule
+10049,2,Antacid Liquid,bottle
+10050,2,Zinc Tablets,tablet
+10051,3,Paracetamol 500mg,tablet
+10052,3,Paracetamol 650mg,tablet
+10053,3,ORS Sachet,sachet
+10054,3,IV Normal Saline 0.9%,liter
+10055,3,IV Ringer Lactate,liter
+10056,3,IV Dextrose 5%,liter
+10057,3,Ibuprofen 400mg,tablet
+10058,3,Cetirizine 10mg,tablet
+10059,3,Azithromycin 500mg,tablet
+10060,3,Doxycycline 100mg,tablet
+10061,3,Amoxicillin 500mg,capsule
+10062,3,N95 Mask,piece
+10063,3,Surgical Mask,piece
+10064,3,Gloves (Latex),pair
+10065,3,Sanitizer 100ml,bottle
+10066,3,Bandage Roll,piece
+10067,3,Gauze Pack,pack
+10068,3,Syringe 5ml,piece
+10069,3,Syringe 10ml,piece
+10070,3,IV Cannula,piece
+10071,3,ORS Electrolyte Powder,sachet
+10072,3,Inhaler - Salbutamol,unit
+10073,3,Nebulizer Solution,ampoule
+10074,3,Antacid Liquid,bottle
+10075,3,Zinc Tablets,tablet
+10076,4,Paracetamol 500mg,tablet
+10077,4,Paracetamol 650mg,tablet
+10078,4,ORS Sachet,sachet
+10079,4,IV Normal Saline 0.9%,liter
+10080,4,IV Ringer Lactate,liter
+10081,4,IV Dextrose 5%,liter
+10082,4,Ibuprofen 400mg,tablet
+10083,4,Cetirizine 10mg,tablet
+10084,4,Azithromycin 500mg,tablet
+10085,4,Doxycycline 100mg,tablet
+10086,4,Amoxicillin 500mg,capsule
+10087,4,N95 Mask,piece
+10088,4,Surgical Mask,piece
+10089,4,Gloves (Latex),pair
+10090,4,Sanitizer 100ml,bottle
+10091,4,Bandage Roll,piece
+10092,4,Gauze Pack,pack
+10093,4,Syringe 5ml,piece
+10094,4,Syringe 10ml,piece
+10095,4,IV Cannula,piece
+10096,4,ORS Electrolyte Powder,sachet
+10097,4,Inhaler - Salbutamol,unit
+10098,4,Nebulizer Solution,ampoule
+10099,4,Antacid Liquid,bottle
+10100,4,Zinc Tablets,tablet
+10101,5,Paracetamol 500mg,tablet
+10102,5,Paracetamol 650mg,tablet
+10103,5,ORS Sachet,sachet
+10104,5,IV Normal Saline 0.9%,liter
+10105,5,IV Ringer Lactate,liter
+10106,5,IV Dextrose 5%,liter
+10107,5,Ibuprofen 400mg,tablet
+10108,5,Cetirizine 10mg,tablet
+10109,5,Azithromycin 500mg,tablet
+10110,5,Doxycycline 100mg,tablet
+10111,5,Amoxicillin 500mg,capsule
+10112,5,N95 Mask,piece
+10113,5,Surgical Mask,piece
+10114,5,Gloves (Latex),pair
+10115,5,Sanitizer 100ml,bottle
+10116,5,Bandage Roll,piece
+10117,5,Gauze Pack,pack
+10118,5,Syringe 5ml,piece
+10119,5,Syringe 10ml,piece
+10120,5,IV Cannula,piece
+10121,5,ORS Electrolyte Powder,sachet
+10122,5,Inhaler - Salbutamol,unit
+10123,5,Nebulizer Solution,ampoule
+10124,5,Antacid Liquid,bottle
+10125,5,Zinc Tablets,tablet
+10126,6,Paracetamol 500mg,tablet
+10127,6,Paracetamol 650mg,tablet
+10128,6,ORS Sachet,sachet
+10129,6,IV Normal Saline 0.9%,liter
+10130,6,IV Ringer Lactate,liter
+10131,6,IV Dextrose 5%,liter
+10132,6,Ibuprofen 400mg,tablet
+10133,6,Cetirizine 10mg,tablet
+10134,6,Azithromycin 500mg,tablet
+10135,6,Doxycycline 100mg,tablet
+10136,6,Amoxicillin 500mg,capsule
+10137,6,N95 Mask,piece
+10138,6,Surgical Mask,piece
+10139,6,Gloves (Latex),pair
+10140,6,Sanitizer 100ml,bottle
+10141,6,Bandage Roll,piece
+10142,6,Gauze Pack,pack
+10143,6,Syringe 5ml,piece
+10144,6,Syringe 10ml,piece
+10145,6,IV Cannula,piece
+10146,6,ORS Electrolyte Powder,sachet
+10147,6,Inhaler - Salbutamol,unit
+10148,6,Nebulizer Solution,ampoule
+10149,6,Antacid Liquid,bottle
+10150,6,Zinc Tablets,tablet
+10151,7,Paracetamol 500mg,tablet
+10152,7,Paracetamol 650mg,tablet
+10153,7,ORS Sachet,sachet
+10154,7,IV Normal Saline 0.9%,liter
+10155,7,IV Ringer Lactate,liter
+10156,7,IV Dextrose 5%,liter
+10157,7,Ibuprofen 400mg,tablet
+10158,7,Cetirizine 10mg,tablet
+10159,7,Azithromycin 500mg,tablet
+10160,7,Doxycycline 100mg,tablet
+10161,7,Amoxicillin 500mg,capsule
+10162,7,N95 Mask,piece
+10163,7,Surgical Mask,piece
+10164,7,Gloves (Latex),pair
+10165,7,Sanitizer 100ml,bottle
+10166,7,Bandage Roll,piece
+10167,7,Gauze Pack,pack
+10168,7,Syringe 5ml,piece
+10169,7,Syringe 10ml,piece
+10170,7,IV Cannula,piece
+10171,7,ORS Electrolyte Powder,sachet
+10172,7,Inhaler - Salbutamol,unit
+10173,7,Nebulizer Solution,ampoule
+10174,7,Antacid Liquid,bottle
+10175,7,Zinc Tablets,tablet
+10176,8,Paracetamol 500mg,tablet
+10177,8,Paracetamol 650mg,tablet
+10178,8,ORS Sachet,sachet
+10179,8,IV Normal Saline 0.9%,liter
+10180,8,IV Ringer Lactate,liter
+10181,8,IV Dextrose 5%,liter
+10182,8,Ibuprofen 400mg,tablet
+10183,8,Cetirizine 10mg,tablet
+10184,8,Azithromycin 500mg,tablet
+10185,8,Doxycycline 100mg,tablet
+10186,8,Amoxicillin 500mg,capsule
+10187,8,N95 Mask,piece
+10188,8,Surgical Mask,piece
+10189,8,Gloves (Latex),pair
+10190,8,Sanitizer 100ml,bottle
+10191,8,Bandage Roll,piece
+10192,8,Gauze Pack,pack
+10193,8,Syringe 5ml,piece
+10194,8,Syringe 10ml,piece
+10195,8,IV Cannula,piece
+10196,8,ORS Electrolyte Powder,sachet
+10197,8,Inhaler - Salbutamol,unit
+10198,8,Nebulizer Solution,ampoule
+10199,8,Antacid Liquid,bottle
+10200,8,Zinc Tablets,tablet
+10201,9,Paracetamol 500mg,tablet
+10202,9,Paracetamol 650mg,tablet
+10203,9,ORS Sachet,sachet
+10204,9,IV Normal Saline 0.9%,liter
+10205,9,IV Ringer Lactate,liter
+10206,9,IV Dextrose 5%,liter
+10207,9,Ibuprofen 400mg,tablet
+10208,9,Cetirizine 10mg,tablet
+10209,9,Azithromycin 500mg,tablet
+10210,9,Doxycycline 100mg,tablet
+10211,9,Amoxicillin 500mg,capsule
+10212,9,N95 Mask,piece
+10213,9,Surgical Mask,piece
+10214,9,Gloves (Latex),pair
+10215,9,Sanitizer 100ml,bottle
+10216,9,Bandage Roll,piece
+10217,9,Gauze Pack,pack
+10218,9,Syringe 5ml,piece
+10219,9,Syringe 10ml,piece
+10220,9,IV Cannula,piece
+10221,9,ORS Electrolyte Powder,sachet
+10222,9,Inhaler - Salbutamol,unit
+10223,9,Nebulizer Solution,ampoule
+10224,9,Antacid Liquid,bottle
+10225,9,Zinc Tablets,tablet
+10226,10,Paracetamol 500mg,tablet
+10227,10,Paracetamol 650mg,tablet
+10228,10,ORS Sachet,sachet
+10229,10,IV Normal Saline 0.9%,liter
+10230,10,IV Ringer Lactate,liter
+10231,10,IV Dextrose 5%,liter
+10232,10,Ibuprofen 400mg,tablet
+10233,10,Cetirizine 10mg,tablet
+10234,10,Azithromycin 500mg,tablet
+10235,10,Doxycycline 100mg,tablet
+10236,10,Amoxicillin 500mg,capsule
+10237,10,N95 Mask,piece
+10238,10,Surgical Mask,piece
+10239,10,Gloves (Latex),pair
+10240,10,Sanitizer 100ml,bottle
+10241,10,Bandage Roll,piece
+10242,10,Gauze Pack,pack
+10243,10,Syringe 5ml,piece
+10244,10,Syringe 10ml,piece
+10245,10,IV Cannula,piece
+10246,10,ORS Electrolyte Powder,sachet
+10247,10,Inhaler - Salbutamol,unit
+10248,10,Nebulizer Solution,ampoule
+10249,10,Antacid Liquid,bottle
+10250,10,Zinc Tablets,tablet
+10251,11,Paracetamol 500mg,tablet
+10252,11,Paracetamol 650mg,tablet
+10253,11,ORS Sachet,sachet
+10254,11,IV Normal Saline 0.9%,liter
+10255,11,IV Ringer Lactate,liter
+10256,11,IV Dextrose 5%,liter
+10257,11,Ibuprofen 400mg,tablet
+10258,11,Cetirizine 10mg,tablet
+10259,11,Azithromycin 500mg,tablet
+10260,11,Doxycycline 100mg,tablet
+10261,11,Amoxicillin 500mg,capsule
+10262,11,N95 Mask,piece
+10263,11,Surgical Mask,piece
+10264,11,Gloves (Latex),pair
+10265,11,Sanitizer 100ml,bottle
+10266,11,Bandage Roll,piece
+10267,11,Gauze Pack,pack
+10268,11,Syringe 5ml,piece
+10269,11,Syringe 10ml,piece
+10270,11,IV Cannula,piece
+10271,11,ORS Electrolyte Powder,sachet
+10272,11,Inhaler - Salbutamol,unit
+10273,11,Nebulizer Solution,ampoule
+10274,11,Antacid Liquid,bottle
+10275,11,Zinc Tablets,tablet
+10276,12,Paracetamol 500mg,tablet
+10277,12,Paracetamol 650mg,tablet
+10278,12,ORS Sachet,sachet
+10279,12,IV Normal Saline 0.9%,liter
+10280,12,IV Ringer Lactate,liter
+10281,12,IV Dextrose 5%,liter
+10282,12,Ibuprofen 400mg,tablet
+10283,12,Cetirizine 10mg,tablet
+10284,12,Azithromycin 500mg,tablet
+10285,12,Doxycycline 100mg,tablet
+10286,12,Amoxicillin 500mg,capsule
+10287,12,N95 Mask,piece
+10288,12,Surgical Mask,piece
+10289,12,Gloves (Latex),pair
+10290,12,Sanitizer 100ml,bottle
+10291,12,Bandage Roll,piece
+10292,12,Gauze Pack,pack
+10293,12,Syringe 5ml,piece
+10294,12,Syringe 10ml,piece
+10295,12,IV Cannula,piece
+10296,12,ORS Electrolyte Powder,sachet
+10297,12,Inhaler - Salbutamol,unit
+10298,12,Nebulizer Solution,ampoule
+10299,12,Antacid Liquid,bottle
+10300,12,Zinc Tablets,tablet
+10301,13,Paracetamol 500mg,tablet
+10302,13,Paracetamol 650mg,tablet
+10303,13,ORS Sachet,sachet
+10304,13,IV Normal Saline 0.9%,liter
+10305,13,IV Ringer Lactate,liter
+10306,13,IV Dextrose 5%,liter
+10307,13,Ibuprofen 400mg,tablet
+10308,13,Cetirizine 10mg,tablet
+10309,13,Azithromycin 500mg,tablet
+10310,13,Doxycycline 100mg,tablet
+10311,13,Amoxicillin 500mg,capsule
+10312,13,N95 Mask,piece
+10313,13,Surgical Mask,piece
+10314,13,Gloves (Latex),pair
+10315,13,Sanitizer 100ml,bottle
+10316,13,Bandage Roll,piece
+10317,13,Gauze Pack,pack
+10318,13,Syringe 5ml,piece
+10319,13,Syringe 10ml,piece
+10320,13,IV Cannula,piece
+10321,13,ORS Electrolyte Powder,sachet
+10322,13,Inhaler - Salbutamol,unit
+10323,13,Nebulizer Solution,ampoule
+10324,13,Antacid Liquid,bottle
+10325,13,Zinc Tablets,tablet
+10326,14,Paracetamol 500mg,tablet
+10327,14,Paracetamol 650mg,tablet
+10328,14,ORS Sachet,sachet
+10329,14,IV Normal Saline 0.9%,liter
+10330,14,IV Ringer Lactate,liter
+10331,14,IV Dextrose 5%,liter
+10332,14,Ibuprofen 400mg,tablet
+10333,14,Cetirizine 10mg,tablet
+10334,14,Azithromycin 500mg,tablet
+10335,14,Doxycycline 100mg,tablet
+10336,14,Amoxicillin 500mg,capsule
+10337,14,N95 Mask,piece
+10338,14,Surgical Mask,piece
+10339,14,Gloves (Latex),pair
+10340,14,Sanitizer 100ml,bottle
+10341,14,Bandage Roll,piece
+10342,14,Gauze Pack,pack
+10343,14,Syringe 5ml,piece
+10344,14,Syringe 10ml,piece
+10345,14,IV Cannula,piece
+10346,14,ORS Electrolyte Powder,sachet
+10347,14,Inhaler - Salbutamol,unit
+10348,14,Nebulizer Solution,ampoule
+10349,14,Antacid Liquid,bottle
+10350,14,Zinc Tablets,tablet
+10351,15,Paracetamol 500mg,tablet
+10352,15,Paracetamol 650mg,tablet
+10353,15,ORS Sachet,sachet
+10354,15,IV Normal Saline 0.9%,liter
+10355,15,IV Ringer Lactate,liter
+10356,15,IV Dextrose 5%,liter
+10357,15,Ibuprofen 400mg,tablet
+10358,15,Cetirizine 10mg,tablet
+10359,15,Azithromycin 500mg,tablet
+10360,15,Doxycycline 100mg,tablet
+10361,15,Amoxicillin 500mg,capsule
+10362,15,N95 Mask,piece
+10363,15,Surgical Mask,piece
+10364,15,Gloves (Latex),pair
+10365,15,Sanitizer 100ml,bottle
+10366,15,Bandage Roll,piece
+10367,15,Gauze Pack,pack
+10368,15,Syringe 5ml,piece
+10369,15,Syringe 10ml,piece
+10370,15,IV Cannula,piece
+10371,15,ORS Electrolyte Powder,sachet
+10372,15,Inhaler - Salbutamol,unit
+10373,15,Nebulizer Solution,ampoule
+10374,15,Antacid Liquid,bottle
+10375,15,Zinc Tablets,tablet
+10376,16,Paracetamol 500mg,tablet
+10377,16,Paracetamol 650mg,tablet
+10378,16,ORS Sachet,sachet
+10379,16,IV Normal Saline 0.9%,liter
+10380,16,IV Ringer Lactate,liter
+10381,16,IV Dextrose 5%,liter
+10382,16,Ibuprofen 400mg,tablet
+10383,16,Cetirizine 10mg,tablet
+10384,16,Azithromycin 500mg,tablet
+10385,16,Doxycycline 100mg,tablet
+10386,16,Amoxicillin 500mg,capsule
+10387,16,N95 Mask,piece
+10388,16,Surgical Mask,piece
+10389,16,Gloves (Latex),pair
+10390,16,Sanitizer 100ml,bottle
+10391,16,Bandage Roll,piece
+10392,16,Gauze Pack,pack
+10393,16,Syringe 5ml,piece
+10394,16,Syringe 10ml,piece
+10395,16,IV Cannula,piece
+10396,16,ORS Electrolyte Powder,sachet
+10397,16,Inhaler - Salbutamol,unit
+10398,16,Nebulizer Solution,ampoule
+10399,16,Antacid Liquid,bottle
+10400,16,Zinc Tablets,tablet
+10401,17,Paracetamol 500mg,tablet
+10402,17,Paracetamol 650mg,tablet
+10403,17,ORS Sachet,sachet
+10404,17,IV Normal Saline 0.9%,liter
+10405,17,IV Ringer Lactate,liter
+10406,17,IV Dextrose 5%,liter
+10407,17,Ibuprofen 400mg,tablet
+10408,17,Cetirizine 10mg,tablet
+10409,17,Azithromycin 500mg,tablet
+10410,17,Doxycycline 100mg,tablet
+10411,17,Amoxicillin 500mg,capsule
+10412,17,N95 Mask,piece
+10413,17,Surgical Mask,piece
+10414,17,Gloves (Latex),pair
+10415,17,Sanitizer 100ml,bottle
+10416,17,Bandage Roll,piece
+10417,17,Gauze Pack,pack
+10418,17,Syringe 5ml,piece
+10419,17,Syringe 10ml,piece
+10420,17,IV Cannula,piece
+10421,17,ORS Electrolyte Powder,sachet
+10422,17,Inhaler - Salbutamol,unit
+10423,17,Nebulizer Solution,ampoule
+10424,17,Antacid Liquid,bottle
+10425,17,Zinc Tablets,tablet
+10426,18,Paracetamol 500mg,tablet
+10427,18,Paracetamol 650mg,tablet
+10428,18,ORS Sachet,sachet
+10429,18,IV Normal Saline 0.9%,liter
+10430,18,IV Ringer Lactate,liter
+10431,18,IV Dextrose 5%,liter
+10432,18,Ibuprofen 400mg,tablet
+10433,18,Cetirizine 10mg,tablet
+10434,18,Azithromycin 500mg,tablet
+10435,18,Doxycycline 100mg,tablet
+10436,18,Amoxicillin 500mg,capsule
+10437,18,N95 Mask,piece
+10438,18,Surgical Mask,piece
+10439,18,Gloves (Latex),pair
+10440,18,Sanitizer 100ml,bottle
+10441,18,Bandage Roll,piece
+10442,18,Gauze Pack,pack
+10443,18,Syringe 5ml,piece
+10444,18,Syringe 10ml,piece
+10445,18,IV Cannula,piece
+10446,18,ORS Electrolyte Powder,sachet
+10447,18,Inhaler - Salbutamol,unit
+10448,18,Nebulizer Solution,ampoule
+10449,18,Antacid Liquid,bottle
+10450,18,Zinc Tablets,tablet
+10451,19,Paracetamol 500mg,tablet
+10452,19,Paracetamol 650mg,tablet
+10453,19,ORS Sachet,sachet
+10454,19,IV Normal Saline 0.9%,liter
+10455,19,IV Ringer Lactate,liter
+10456,19,IV Dextrose 5%,liter
+10457,19,Ibuprofen 400mg,tablet
+10458,19,Cetirizine 10mg,tablet
+10459,19,Azithromycin 500mg,tablet
+10460,19,Doxycycline 100mg,tablet
+10461,19,Amoxicillin 500mg,capsule
+10462,19,N95 Mask,piece
+10463,19,Surgical Mask,piece
+10464,19,Gloves (Latex),pair
+10465,19,Sanitizer 100ml,bottle
+10466,19,Bandage Roll,piece
+10467,19,Gauze Pack,pack
+10468,19,Syringe 5ml,piece
+10469,19,Syringe 10ml,piece
+10470,19,IV Cannula,piece
+10471,19,ORS Electrolyte Powder,sachet
+10472,19,Inhaler - Salbutamol,unit
+10473,19,Nebulizer Solution,ampoule
+10474,19,Antacid Liquid,bottle
+10475,19,Zinc Tablets,tablet
+10476,20,Paracetamol 500mg,tablet
+10477,20,Paracetamol 650mg,tablet
+10478,20,ORS Sachet,sachet
+10479,20,IV Normal Saline 0.9%,liter
+10480,20,IV Ringer Lactate,liter
+10481,20,IV Dextrose 5%,liter
+10482,20,Ibuprofen 400mg,tablet
+10483,20,Cetirizine 10mg,tablet
+10484,20,Azithromycin 500mg,tablet
+10485,20,Doxycycline 100mg,tablet
+10486,20,Amoxicillin 500mg,capsule
+10487,20,N95 Mask,piece
+10488,20,Surgical Mask,piece
+10489,20,Gloves (Latex),pair
+10490,20,Sanitizer 100ml,bottle
+10491,20,Bandage Roll,piece
+10492,20,Gauze Pack,pack
+10493,20,Syringe 5ml,piece
+10494,20,Syringe 10ml,piece
+10495,20,IV Cannula,piece
+10496,20,ORS Electrolyte Powder,sachet
+10497,20,Inhaler - Salbutamol,unit
+10498,20,Nebulizer Solution,ampoule
+10499,20,Antacid Liquid,bottle
+10500,20,Zinc Tablets,tablet
+10501,21,Paracetamol 500mg,tablet
+10502,21,Paracetamol 650mg,tablet
+10503,21,ORS Sachet,sachet
+10504,21,IV Normal Saline 0.9%,liter
+10505,21,IV Ringer Lactate,liter
+10506,21,IV Dextrose 5%,liter
+10507,21,Ibuprofen 400mg,tablet
+10508,21,Cetirizine 10mg,tablet
+10509,21,Azithromycin 500mg,tablet
+10510,21,Doxycycline 100mg,tablet
+10511,21,Amoxicillin 500mg,capsule
+10512,21,N95 Mask,piece
+10513,21,Surgical Mask,piece
+10514,21,Gloves (Latex),pair
+10515,21,Sanitizer 100ml,bottle
+10516,21,Bandage Roll,piece
+10517,21,Gauze Pack,pack
+10518,21,Syringe 5ml,piece
+10519,21,Syringe 10ml,piece
+10520,21,IV Cannula,piece
+10521,21,ORS Electrolyte Powder,sachet
+10522,21,Inhaler - Salbutamol,unit
+10523,21,Nebulizer Solution,ampoule
+10524,21,Antacid Liquid,bottle
+10525,21,Zinc Tablets,tablet
+10526,22,Paracetamol 500mg,tablet
+10527,22,Paracetamol 650mg,tablet
+10528,22,ORS Sachet,sachet
+10529,22,IV Normal Saline 0.9%,liter
+10530,22,IV Ringer Lactate,liter
+10531,22,IV Dextrose 5%,liter
+10532,22,Ibuprofen 400mg,tablet
+10533,22,Cetirizine 10mg,tablet
+10534,22,Azithromycin 500mg,tablet
+10535,22,Doxycycline 100mg,tablet
+10536,22,Amoxicillin 500mg,capsule
+10537,22,N95 Mask,piece
+10538,22,Surgical Mask,piece
+10539,22,Gloves (Latex),pair
+10540,22,Sanitizer 100ml,bottle
+10541,22,Bandage Roll,piece
+10542,22,Gauze Pack,pack
+10543,22,Syringe 5ml,piece
+10544,22,Syringe 10ml,piece
+10545,22,IV Cannula,piece
+10546,22,ORS Electrolyte Powder,sachet
+10547,22,Inhaler - Salbutamol,unit
+10548,22,Nebulizer Solution,ampoule
+10549,22,Antacid Liquid,bottle
+10550,22,Zinc Tablets,tablet
+10551,23,Paracetamol 500mg,tablet
+10552,23,Paracetamol 650mg,tablet
+10553,23,ORS Sachet,sachet
+10554,23,IV Normal Saline 0.9%,liter
+10555,23,IV Ringer Lactate,liter
+10556,23,IV Dextrose 5%,liter
+10557,23,Ibuprofen 400mg,tablet
+10558,23,Cetirizine 10mg,tablet
+10559,23,Azithromycin 500mg,tablet
+10560,23,Doxycycline 100mg,tablet
+10561,23,Amoxicillin 500mg,capsule
+10562,23,N95 Mask,piece
+10563,23,Surgical Mask,piece
+10564,23,Gloves (Latex),pair
+10565,23,Sanitizer 100ml,bottle
+10566,23,Bandage Roll,piece
+10567,23,Gauze Pack,pack
+10568,23,Syringe 5ml,piece
+10569,23,Syringe 10ml,piece
+10570,23,IV Cannula,piece
+10571,23,ORS Electrolyte Powder,sachet
+10572,23,Inhaler - Salbutamol,unit
+10573,23,Nebulizer Solution,ampoule
+10574,23,Antacid Liquid,bottle
+10575,23,Zinc Tablets,tablet
+10576,24,Paracetamol 500mg,tablet
+10577,24,Paracetamol 650mg,tablet
+10578,24,ORS Sachet,sachet
+10579,24,IV Normal Saline 0.9%,liter
+10580,24,IV Ringer Lactate,liter
+10581,24,IV Dextrose 5%,liter
+10582,24,Ibuprofen 400mg,tablet
+10583,24,Cetirizine 10mg,tablet
+10584,24,Azithromycin 500mg,tablet
+10585,24,Doxycycline 100mg,tablet
+10586,24,Amoxicillin 500mg,capsule
+10587,24,N95 Mask,piece
+10588,24,Surgical Mask,piece
+10589,24,Gloves (Latex),pair
+10590,24,Sanitizer 100ml,bottle
+10591,24,Bandage Roll,piece
+10592,24,Gauze Pack,pack
+10593,24,Syringe 5ml,piece
+10594,24,Syringe 10ml,piece
+10595,24,IV Cannula,piece
+10596,24,ORS Electrolyte Powder,sachet
+10597,24,Inhaler - Salbutamol,unit
+10598,24,Nebulizer Solution,ampoule
+10599,24,Antacid Liquid,bottle
+10600,24,Zinc Tablets,tablet
+10601,25,Paracetamol 500mg,tablet
+10602,25,Paracetamol 650mg,tablet
+10603,25,ORS Sachet,sachet
+10604,25,IV Normal Saline 0.9%,liter
+10605,25,IV Ringer Lactate,liter
+10606,25,IV Dextrose 5%,liter
+10607,25,Ibuprofen 400mg,tablet
+10608,25,Cetirizine 10mg,tablet
+10609,25,Azithromycin 500mg,tablet
+10610,25,Doxycycline 100mg,tablet
+10611,25,Amoxicillin 500mg,capsule
+10612,25,N95 Mask,piece
+10613,25,Surgical Mask,piece
+10614,25,Gloves (Latex),pair
+10615,25,Sanitizer 100ml,bottle
+10616,25,Bandage Roll,piece
+10617,25,Gauze Pack,pack
+10618,25,Syringe 5ml,piece
+10619,25,Syringe 10ml,piece
+10620,25,IV Cannula,piece
+10621,25,ORS Electrolyte Powder,sachet
+10622,25,Inhaler - Salbutamol,unit
+10623,25,Nebulizer Solution,ampoule
+10624,25,Antacid Liquid,bottle
+10625,25,Zinc Tablets,tablet
+10626,26,Paracetamol 500mg,tablet
+10627,26,Paracetamol 650mg,tablet
+10628,26,ORS Sachet,sachet
+10629,26,IV Normal Saline 0.9%,liter
+10630,26,IV Ringer Lactate,liter
+10631,26,IV Dextrose 5%,liter
+10632,26,Ibuprofen 400mg,tablet
+10633,26,Cetirizine 10mg,tablet
+10634,26,Azithromycin 500mg,tablet
+10635,26,Doxycycline 100mg,tablet
+10636,26,Amoxicillin 500mg,capsule
+10637,26,N95 Mask,piece
+10638,26,Surgical Mask,piece
+10639,26,Gloves (Latex),pair
+10640,26,Sanitizer 100ml,bottle
+10641,26,Bandage Roll,piece
+10642,26,Gauze Pack,pack
+10643,26,Syringe 5ml,piece
+10644,26,Syringe 10ml,piece
+10645,26,IV Cannula,piece
+10646,26,ORS Electrolyte Powder,sachet
+10647,26,Inhaler - Salbutamol,unit
+10648,26,Nebulizer Solution,ampoule
+10649,26,Antacid Liquid,bottle
+10650,26,Zinc Tablets,tablet
+10651,27,Paracetamol 500mg,tablet
+10652,27,Paracetamol 650mg,tablet
+10653,27,ORS Sachet,sachet
+10654,27,IV Normal Saline 0.9%,liter
+10655,27,IV Ringer Lactate,liter
+10656,27,IV Dextrose 5%,liter
+10657,27,Ibuprofen 400mg,tablet
+10658,27,Cetirizine 10mg,tablet
+10659,27,Azithromycin 500mg,tablet
+10660,27,Doxycycline 100mg,tablet
+10661,27,Amoxicillin 500mg,capsule
+10662,27,N95 Mask,piece
+10663,27,Surgical Mask,piece
+10664,27,Gloves (Latex),pair
+10665,27,Sanitizer 100ml,bottle
+10666,27,Bandage Roll,piece
+10667,27,Gauze Pack,pack
+10668,27,Syringe 5ml,piece
+10669,27,Syringe 10ml,piece
+10670,27,IV Cannula,piece
+10671,27,ORS Electrolyte Powder,sachet
+10672,27,Inhaler - Salbutamol,unit
+10673,27,Nebulizer Solution,ampoule
+10674,27,Antacid Liquid,bottle
+10675,27,Zinc Tablets,tablet
+10676,28,Paracetamol 500mg,tablet
+10677,28,Paracetamol 650mg,tablet
+10678,28,ORS Sachet,sachet
+10679,28,IV Normal Saline 0.9%,liter
+10680,28,IV Ringer Lactate,liter
+10681,28,IV Dextrose 5%,liter
+10682,28,Ibuprofen 400mg,tablet
+10683,28,Cetirizine 10mg,tablet
+10684,28,Azithromycin 500mg,tablet
+10685,28,Doxycycline 100mg,tablet
+10686,28,Amoxicillin 500mg,capsule
+10687,28,N95 Mask,piece
+10688,28,Surgical Mask,piece
+10689,28,Gloves (Latex),pair
+10690,28,Sanitizer 100ml,bottle
+10691,28,Bandage Roll,piece
+10692,28,Gauze Pack,pack
+10693,28,Syringe 5ml,piece
+10694,28,Syringe 10ml,piece
+10695,28,IV Cannula,piece
+10696,28,ORS Electrolyte Powder,sachet
+10697,28,Inhaler - Salbutamol,unit
+10698,28,Nebulizer Solution,ampoule
+10699,28,Antacid Liquid,bottle
+10700,28,Zinc Tablets,tablet
+10701,29,Paracetamol 500mg,tablet
+10702,29,Paracetamol 650mg,tablet
+10703,29,ORS Sachet,sachet
+10704,29,IV Normal Saline 0.9%,liter
+10705,29,IV Ringer Lactate,liter
+10706,29,IV Dextrose 5%,liter
+10707,29,Ibuprofen 400mg,tablet
+10708,29,Cetirizine 10mg,tablet
+10709,29,Azithromycin 500mg,tablet
+10710,29,Doxycycline 100mg,tablet
+10711,29,Amoxicillin 500mg,capsule
+10712,29,N95 Mask,piece
+10713,29,Surgical Mask,piece
+10714,29,Gloves (Latex),pair
+10715,29,Sanitizer 100ml,bottle
+10716,29,Bandage Roll,piece
+10717,29,Gauze Pack,pack
+10718,29,Syringe 5ml,piece
+10719,29,Syringe 10ml,piece
+10720,29,IV Cannula,piece
+10721,29,ORS Electrolyte Powder,sachet
+10722,29,Inhaler - Salbutamol,unit
+10723,29,Nebulizer Solution,ampoule
+10724,29,Antacid Liquid,bottle
+10725,29,Zinc Tablets,tablet
+10726,30,Paracetamol 500mg,tablet
+10727,30,Paracetamol 650mg,tablet
+10728,30,ORS Sachet,sachet
+10729,30,IV Normal Saline 0.9%,liter
+10730,30,IV Ringer Lactate,liter
+10731,30,IV Dextrose 5%,liter
+10732,30,Ibuprofen 400mg,tablet
+10733,30,Cetirizine 10mg,tablet
+10734,30,Azithromycin 500mg,tablet
+10735,30,Doxycycline 100mg,tablet
+10736,30,Amoxicillin 500mg,capsule
+10737,30,N95 Mask,piece
+10738,30,Surgical Mask,piece
+10739,30,Gloves (Latex),pair
+10740,30,Sanitizer 100ml,bottle
+10741,30,Bandage Roll,piece
+10742,30,Gauze Pack,pack
+10743,30,Syringe 5ml,piece
+10744,30,Syringe 10ml,piece
+10745,30,IV Cannula,piece
+10746,30,ORS Electrolyte Powder,sachet
+10747,30,Inhaler - Salbutamol,unit
+10748,30,Nebulizer Solution,ampoule
+10749,30,Antacid Liquid,bottle
+10750,30,Zinc Tablets,tablet
+10751,31,Paracetamol 500mg,tablet
+10752,31,Paracetamol 650mg,tablet
+10753,31,ORS Sachet,sachet
+10754,31,IV Normal Saline 0.9%,liter
+10755,31,IV Ringer Lactate,liter
+10756,31,IV Dextrose 5%,liter
+10757,31,Ibuprofen 400mg,tablet
+10758,31,Cetirizine 10mg,tablet
+10759,31,Azithromycin 500mg,tablet
+10760,31,Doxycycline 100mg,tablet
+10761,31,Amoxicillin 500mg,capsule
+10762,31,N95 Mask,piece
+10763,31,Surgical Mask,piece
+10764,31,Gloves (Latex),pair
+10765,31,Sanitizer 100ml,bottle
+10766,31,Bandage Roll,piece
+10767,31,Gauze Pack,pack
+10768,31,Syringe 5ml,piece
+10769,31,Syringe 10ml,piece
+10770,31,IV Cannula,piece
+10771,31,ORS Electrolyte Powder,sachet
+10772,31,Inhaler - Salbutamol,unit
+10773,31,Nebulizer Solution,ampoule
+10774,31,Antacid Liquid,bottle
+10775,31,Zinc Tablets,tablet
+10776,32,Paracetamol 500mg,tablet
+10777,32,Paracetamol 650mg,tablet
+10778,32,ORS Sachet,sachet
+10779,32,IV Normal Saline 0.9%,liter
+10780,32,IV Ringer Lactate,liter
+10781,32,IV Dextrose 5%,liter
+10782,32,Ibuprofen 400mg,tablet
+10783,32,Cetirizine 10mg,tablet
+10784,32,Azithromycin 500mg,tablet
+10785,32,Doxycycline 100mg,tablet
+10786,32,Amoxicillin 500mg,capsule
+10787,32,N95 Mask,piece
+10788,32,Surgical Mask,piece
+10789,32,Gloves (Latex),pair
+10790,32,Sanitizer 100ml,bottle
+10791,32,Bandage Roll,piece
+10792,32,Gauze Pack,pack
+10793,32,Syringe 5ml,piece
+10794,32,Syringe 10ml,piece
+10795,32,IV Cannula,piece
+10796,32,ORS Electrolyte Powder,sachet
+10797,32,Inhaler - Salbutamol,unit
+10798,32,Nebulizer Solution,ampoule
+10799,32,Antacid Liquid,bottle
+10800,32,Zinc Tablets,tablet
+10801,33,Paracetamol 500mg,tablet
+10802,33,Paracetamol 650mg,tablet
+10803,33,ORS Sachet,sachet
+10804,33,IV Normal Saline 0.9%,liter
+10805,33,IV Ringer Lactate,liter
+10806,33,IV Dextrose 5%,liter
+10807,33,Ibuprofen 400mg,tablet
+10808,33,Cetirizine 10mg,tablet
+10809,33,Azithromycin 500mg,tablet
+10810,33,Doxycycline 100mg,tablet
+10811,33,Amoxicillin 500mg,capsule
+10812,33,N95 Mask,piece
+10813,33,Surgical Mask,piece
+10814,33,Gloves (Latex),pair
+10815,33,Sanitizer 100ml,bottle
+10816,33,Bandage Roll,piece
+10817,33,Gauze Pack,pack
+10818,33,Syringe 5ml,piece
+10819,33,Syringe 10ml,piece
+10820,33,IV Cannula,piece
+10821,33,ORS Electrolyte Powder,sachet
+10822,33,Inhaler - Salbutamol,unit
+10823,33,Nebulizer Solution,ampoule
+10824,33,Antacid Liquid,bottle
+10825,33,Zinc Tablets,tablet
+10826,34,Paracetamol 500mg,tablet
+10827,34,Paracetamol 650mg,tablet
+10828,34,ORS Sachet,sachet
+10829,34,IV Normal Saline 0.9%,liter
+10830,34,IV Ringer Lactate,liter
+10831,34,IV Dextrose 5%,liter
+10832,34,Ibuprofen 400mg,tablet
+10833,34,Cetirizine 10mg,tablet
+10834,34,Azithromycin 500mg,tablet
+10835,34,Doxycycline 100mg,tablet
+10836,34,Amoxicillin 500mg,capsule
+10837,34,N95 Mask,piece
+10838,34,Surgical Mask,piece
+10839,34,Gloves (Latex),pair
+10840,34,Sanitizer 100ml,bottle
+10841,34,Bandage Roll,piece
+10842,34,Gauze Pack,pack
+10843,34,Syringe 5ml,piece
+10844,34,Syringe 10ml,piece
+10845,34,IV Cannula,piece
+10846,34,ORS Electrolyte Powder,sachet
+10847,34,Inhaler - Salbutamol,unit
+10848,34,Nebulizer Solution,ampoule
+10849,34,Antacid Liquid,bottle
+10850,34,Zinc Tablets,tablet
+10851,35,Paracetamol 500mg,tablet
+10852,35,Paracetamol 650mg,tablet
+10853,35,ORS Sachet,sachet
+10854,35,IV Normal Saline 0.9%,liter
+10855,35,IV Ringer Lactate,liter
+10856,35,IV Dextrose 5%,liter
+10857,35,Ibuprofen 400mg,tablet
+10858,35,Cetirizine 10mg,tablet
+10859,35,Azithromycin 500mg,tablet
+10860,35,Doxycycline 100mg,tablet
+10861,35,Amoxicillin 500mg,capsule
+10862,35,N95 Mask,piece
+10863,35,Surgical Mask,piece
+10864,35,Gloves (Latex),pair
+10865,35,Sanitizer 100ml,bottle
+10866,35,Bandage Roll,piece
+10867,35,Gauze Pack,pack
+10868,35,Syringe 5ml,piece
+10869,35,Syringe 10ml,piece
+10870,35,IV Cannula,piece
+10871,35,ORS Electrolyte Powder,sachet
+10872,35,Inhaler - Salbutamol,unit
+10873,35,Nebulizer Solution,ampoule
+10874,35,Antacid Liquid,bottle
+10875,35,Zinc Tablets,tablet
+10876,36,Paracetamol 500mg,tablet
+10877,36,Paracetamol 650mg,tablet
+10878,36,ORS Sachet,sachet
+10879,36,IV Normal Saline 0.9%,liter
+10880,36,IV Ringer Lactate,liter
+10881,36,IV Dextrose 5%,liter
+10882,36,Ibuprofen 400mg,tablet
+10883,36,Cetirizine 10mg,tablet
+10884,36,Azithromycin 500mg,tablet
+10885,36,Doxycycline 100mg,tablet
+10886,36,Amoxicillin 500mg,capsule
+10887,36,N95 Mask,piece
+10888,36,Surgical Mask,piece
+10889,36,Gloves (Latex),pair
+10890,36,Sanitizer 100ml,bottle
+10891,36,Bandage Roll,piece
+10892,36,Gauze Pack,pack
+10893,36,Syringe 5ml,piece
+10894,36,Syringe 10ml,piece
+10895,36,IV Cannula,piece
+10896,36,ORS Electrolyte Powder,sachet
+10897,36,Inhaler - Salbutamol,unit
+10898,36,Nebulizer Solution,ampoule
+10899,36,Antacid Liquid,bottle
+10900,36,Zinc Tablets,tablet
+10901,37,Paracetamol 500mg,tablet
+10902,37,Paracetamol 650mg,tablet
+10903,37,ORS Sachet,sachet
+10904,37,IV Normal Saline 0.9%,liter
+10905,37,IV Ringer Lactate,liter
+10906,37,IV Dextrose 5%,liter
+10907,37,Ibuprofen 400mg,tablet
+10908,37,Cetirizine 10mg,tablet
+10909,37,Azithromycin 500mg,tablet
+10910,37,Doxycycline 100mg,tablet
+10911,37,Amoxicillin 500mg,capsule
+10912,37,N95 Mask,piece
+10913,37,Surgical Mask,piece
+10914,37,Gloves (Latex),pair
+10915,37,Sanitizer 100ml,bottle
+10916,37,Bandage Roll,piece
+10917,37,Gauze Pack,pack
+10918,37,Syringe 5ml,piece
+10919,37,Syringe 10ml,piece
+10920,37,IV Cannula,piece
+10921,37,ORS Electrolyte Powder,sachet
+10922,37,Inhaler - Salbutamol,unit
+10923,37,Nebulizer Solution,ampoule
+10924,37,Antacid Liquid,bottle
+10925,37,Zinc Tablets,tablet
+10926,38,Paracetamol 500mg,tablet
+10927,38,Paracetamol 650mg,tablet
+10928,38,ORS Sachet,sachet
+10929,38,IV Normal Saline 0.9%,liter
+10930,38,IV Ringer Lactate,liter
+10931,38,IV Dextrose 5%,liter
+10932,38,Ibuprofen 400mg,tablet
+10933,38,Cetirizine 10mg,tablet
+10934,38,Azithromycin 500mg,tablet
+10935,38,Doxycycline 100mg,tablet
+10936,38,Amoxicillin 500mg,capsule
+10937,38,N95 Mask,piece
+10938,38,Surgical Mask,piece
+10939,38,Gloves (Latex),pair
+10940,38,Sanitizer 100ml,bottle
+10941,38,Bandage Roll,piece
+10942,38,Gauze Pack,pack
+10943,38,Syringe 5ml,piece
+10944,38,Syringe 10ml,piece
+10945,38,IV Cannula,piece
+10946,38,ORS Electrolyte Powder,sachet
+10947,38,Inhaler - Salbutamol,unit
+10948,38,Nebulizer Solution,ampoule
+10949,38,Antacid Liquid,bottle
+10950,38,Zinc Tablets,tablet
+10951,39,Paracetamol 500mg,tablet
+10952,39,Paracetamol 650mg,tablet
+10953,39,ORS Sachet,sachet
+10954,39,IV Normal Saline 0.9%,liter
+10955,39,IV Ringer Lactate,liter
+10956,39,IV Dextrose 5%,liter
+10957,39,Ibuprofen 400mg,tablet
+10958,39,Cetirizine 10mg,tablet
+10959,39,Azithromycin 500mg,tablet
+10960,39,Doxycycline 100mg,tablet
+10961,39,Amoxicillin 500mg,capsule
+10962,39,N95 Mask,piece
+10963,39,Surgical Mask,piece
+10964,39,Gloves (Latex),pair
+10965,39,Sanitizer 100ml,bottle
+10966,39,Bandage Roll,piece
+10967,39,Gauze Pack,pack
+10968,39,Syringe 5ml,piece
+10969,39,Syringe 10ml,piece
+10970,39,IV Cannula,piece
+10971,39,ORS Electrolyte Powder,sachet
+10972,39,Inhaler - Salbutamol,unit
+10973,39,Nebulizer Solution,ampoule
+10974,39,Antacid Liquid,bottle
+10975,39,Zinc Tablets,tablet
+10976,40,Paracetamol 500mg,tablet
+10977,40,Paracetamol 650mg,tablet
+10978,40,ORS Sachet,sachet
+10979,40,IV Normal Saline 0.9%,liter
+10980,40,IV Ringer Lactate,liter
+10981,40,IV Dextrose 5%,liter
+10982,40,Ibuprofen 400mg,tablet
+10983,40,Cetirizine 10mg,tablet
+10984,40,Azithromycin 500mg,tablet
+10985,40,Doxycycline 100mg,tablet
+10986,40,Amoxicillin 500mg,capsule
+10987,40,N95 Mask,piece
+10988,40,Surgical Mask,piece
+10989,40,Gloves (Latex),pair
+10990,40,Sanitizer 100ml,bottle
+10991,40,Bandage Roll,piece
+10992,40,Gauze Pack,pack
+10993,40,Syringe 5ml,piece
+10994,40,Syringe 10ml,piece
+10995,40,IV Cannula,piece
+10996,40,ORS Electrolyte Powder,sachet
+10997,40,Inhaler - Salbutamol,unit
+10998,40,Nebulizer Solution,ampoule
+10999,40,Antacid Liquid,bottle
+11000,40,Zinc Tablets,tablet
+11001,41,Paracetamol 500mg,tablet
+11002,41,Paracetamol 650mg,tablet
+11003,41,ORS Sachet,sachet
+11004,41,IV Normal Saline 0.9%,liter
+11005,41,IV Ringer Lactate,liter
+11006,41,IV Dextrose 5%,liter
+11007,41,Ibuprofen 400mg,tablet
+11008,41,Cetirizine 10mg,tablet
+11009,41,Azithromycin 500mg,tablet
+11010,41,Doxycycline 100mg,tablet
+11011,41,Amoxicillin 500mg,capsule
+11012,41,N95 Mask,piece
+11013,41,Surgical Mask,piece
+11014,41,Gloves (Latex),pair
+11015,41,Sanitizer 100ml,bottle
+11016,41,Bandage Roll,piece
+11017,41,Gauze Pack,pack
+11018,41,Syringe 5ml,piece
+11019,41,Syringe 10ml,piece
+11020,41,IV Cannula,piece
+11021,41,ORS Electrolyte Powder,sachet
+11022,41,Inhaler - Salbutamol,unit
+11023,41,Nebulizer Solution,ampoule
+11024,41,Antacid Liquid,bottle
+11025,41,Zinc Tablets,tablet
+11026,42,Paracetamol 500mg,tablet
+11027,42,Paracetamol 650mg,tablet
+11028,42,ORS Sachet,sachet
+11029,42,IV Normal Saline 0.9%,liter
+11030,42,IV Ringer Lactate,liter
+11031,42,IV Dextrose 5%,liter
+11032,42,Ibuprofen 400mg,tablet
+11033,42,Cetirizine 10mg,tablet
+11034,42,Azithromycin 500mg,tablet
+11035,42,Doxycycline 100mg,tablet
+11036,42,Amoxicillin 500mg,capsule
+11037,42,N95 Mask,piece
+11038,42,Surgical Mask,piece
+11039,42,Gloves (Latex),pair
+11040,42,Sanitizer 100ml,bottle
+11041,42,Bandage Roll,piece
+11042,42,Gauze Pack,pack
+11043,42,Syringe 5ml,piece
+11044,42,Syringe 10ml,piece
+11045,42,IV Cannula,piece
+11046,42,ORS Electrolyte Powder,sachet
+11047,42,Inhaler - Salbutamol,unit
+11048,42,Nebulizer Solution,ampoule
+11049,42,Antacid Liquid,bottle
+11050,42,Zinc Tablets,tablet
+11051,43,Paracetamol 500mg,tablet
+11052,43,Paracetamol 650mg,tablet
+11053,43,ORS Sachet,sachet
+11054,43,IV Normal Saline 0.9%,liter
+11055,43,IV Ringer Lactate,liter
+11056,43,IV Dextrose 5%,liter
+11057,43,Ibuprofen 400mg,tablet
+11058,43,Cetirizine 10mg,tablet
+11059,43,Azithromycin 500mg,tablet
+11060,43,Doxycycline 100mg,tablet
+11061,43,Amoxicillin 500mg,capsule
+11062,43,N95 Mask,piece
+11063,43,Surgical Mask,piece
+11064,43,Gloves (Latex),pair
+11065,43,Sanitizer 100ml,bottle
+11066,43,Bandage Roll,piece
+11067,43,Gauze Pack,pack
+11068,43,Syringe 5ml,piece
+11069,43,Syringe 10ml,piece
+11070,43,IV Cannula,piece
+11071,43,ORS Electrolyte Powder,sachet
+11072,43,Inhaler - Salbutamol,unit
+11073,43,Nebulizer Solution,ampoule
+11074,43,Antacid Liquid,bottle
+11075,43,Zinc Tablets,tablet
+11076,44,Paracetamol 500mg,tablet
+11077,44,Paracetamol 650mg,tablet
+11078,44,ORS Sachet,sachet
+11079,44,IV Normal Saline 0.9%,liter
+11080,44,IV Ringer Lactate,liter
+11081,44,IV Dextrose 5%,liter
+11082,44,Ibuprofen 400mg,tablet
+11083,44,Cetirizine 10mg,tablet
+11084,44,Azithromycin 500mg,tablet
+11085,44,Doxycycline 100mg,tablet
+11086,44,Amoxicillin 500mg,capsule
+11087,44,N95 Mask,piece
+11088,44,Surgical Mask,piece
+11089,44,Gloves (Latex),pair
+11090,44,Sanitizer 100ml,bottle
+11091,44,Bandage Roll,piece
+11092,44,Gauze Pack,pack
+11093,44,Syringe 5ml,piece
+11094,44,Syringe 10ml,piece
+11095,44,IV Cannula,piece
+11096,44,ORS Electrolyte Powder,sachet
+11097,44,Inhaler - Salbutamol,unit
+11098,44,Nebulizer Solution,ampoule
+11099,44,Antacid Liquid,bottle
+11100,44,Zinc Tablets,tablet
+11101,45,Paracetamol 500mg,tablet
+11102,45,Paracetamol 650mg,tablet
+11103,45,ORS Sachet,sachet
+11104,45,IV Normal Saline 0.9%,liter
+11105,45,IV Ringer Lactate,liter
+11106,45,IV Dextrose 5%,liter
+11107,45,Ibuprofen 400mg,tablet
+11108,45,Cetirizine 10mg,tablet
+11109,45,Azithromycin 500mg,tablet
+11110,45,Doxycycline 100mg,tablet
+11111,45,Amoxicillin 500mg,capsule
+11112,45,N95 Mask,piece
+11113,45,Surgical Mask,piece
+11114,45,Gloves (Latex),pair
+11115,45,Sanitizer 100ml,bottle
+11116,45,Bandage Roll,piece
+11117,45,Gauze Pack,pack
+11118,45,Syringe 5ml,piece
+11119,45,Syringe 10ml,piece
+11120,45,IV Cannula,piece
+11121,45,ORS Electrolyte Powder,sachet
+11122,45,Inhaler - Salbutamol,unit
+11123,45,Nebulizer Solution,ampoule
+11124,45,Antacid Liquid,bottle
+11125,45,Zinc Tablets,tablet
+11126,46,Paracetamol 500mg,tablet
+11127,46,Paracetamol 650mg,tablet
+11128,46,ORS Sachet,sachet
+11129,46,IV Normal Saline 0.9%,liter
+11130,46,IV Ringer Lactate,liter
+11131,46,IV Dextrose 5%,liter
+11132,46,Ibuprofen 400mg,tablet
+11133,46,Cetirizine 10mg,tablet
+11134,46,Azithromycin 500mg,tablet
+11135,46,Doxycycline 100mg,tablet
+11136,46,Amoxicillin 500mg,capsule
+11137,46,N95 Mask,piece
+11138,46,Surgical Mask,piece
+11139,46,Gloves (Latex),pair
+11140,46,Sanitizer 100ml,bottle
+11141,46,Bandage Roll,piece
+11142,46,Gauze Pack,pack
+11143,46,Syringe 5ml,piece
+11144,46,Syringe 10ml,piece
+11145,46,IV Cannula,piece
+11146,46,ORS Electrolyte Powder,sachet
+11147,46,Inhaler - Salbutamol,unit
+11148,46,Nebulizer Solution,ampoule
+11149,46,Antacid Liquid,bottle
+11150,46,Zinc Tablets,tablet
+11151,47,Paracetamol 500mg,tablet
+11152,47,Paracetamol 650mg,tablet
+11153,47,ORS Sachet,sachet
+11154,47,IV Normal Saline 0.9%,liter
+11155,47,IV Ringer Lactate,liter
+11156,47,IV Dextrose 5%,liter
+11157,47,Ibuprofen 400mg,tablet
+11158,47,Cetirizine 10mg,tablet
+11159,47,Azithromycin 500mg,tablet
+11160,47,Doxycycline 100mg,tablet
+11161,47,Amoxicillin 500mg,capsule
+11162,47,N95 Mask,piece
+11163,47,Surgical Mask,piece
+11164,47,Gloves (Latex),pair
+11165,47,Sanitizer 100ml,bottle
+11166,47,Bandage Roll,piece
+11167,47,Gauze Pack,pack
+11168,47,Syringe 5ml,piece
+11169,47,Syringe 10ml,piece
+11170,47,IV Cannula,piece
+11171,47,ORS Electrolyte Powder,sachet
+11172,47,Inhaler - Salbutamol,unit
+11173,47,Nebulizer Solution,ampoule
+11174,47,Antacid Liquid,bottle
+11175,47,Zinc Tablets,tablet
+11176,48,Paracetamol 500mg,tablet
+11177,48,Paracetamol 650mg,tablet
+11178,48,ORS Sachet,sachet
+11179,48,IV Normal Saline 0.9%,liter
+11180,48,IV Ringer Lactate,liter
+11181,48,IV Dextrose 5%,liter
+11182,48,Ibuprofen 400mg,tablet
+11183,48,Cetirizine 10mg,tablet
+11184,48,Azithromycin 500mg,tablet
+11185,48,Doxycycline 100mg,tablet
+11186,48,Amoxicillin 500mg,capsule
+11187,48,N95 Mask,piece
+11188,48,Surgical Mask,piece
+11189,48,Gloves (Latex),pair
+11190,48,Sanitizer 100ml,bottle
+11191,48,Bandage Roll,piece
+11192,48,Gauze Pack,pack
+11193,48,Syringe 5ml,piece
+11194,48,Syringe 10ml,piece
+11195,48,IV Cannula,piece
+11196,48,ORS Electrolyte Powder,sachet
+11197,48,Inhaler - Salbutamol,unit
+11198,48,Nebulizer Solution,ampoule
+11199,48,Antacid Liquid,bottle
+11200,48,Zinc Tablets,tablet
+11201,49,Paracetamol 500mg,tablet
+11202,49,Paracetamol 650mg,tablet
+11203,49,ORS Sachet,sachet
+11204,49,IV Normal Saline 0.9%,liter
+11205,49,IV Ringer Lactate,liter
+11206,49,IV Dextrose 5%,liter
+11207,49,Ibuprofen 400mg,tablet
+11208,49,Cetirizine 10mg,tablet
+11209,49,Azithromycin 500mg,tablet
+11210,49,Doxycycline 100mg,tablet
+11211,49,Amoxicillin 500mg,capsule
+11212,49,N95 Mask,piece
+11213,49,Surgical Mask,piece
+11214,49,Gloves (Latex),pair
+11215,49,Sanitizer 100ml,bottle
+11216,49,Bandage Roll,piece
+11217,49,Gauze Pack,pack
+11218,49,Syringe 5ml,piece
+11219,49,Syringe 10ml,piece
+11220,49,IV Cannula,piece
+11221,49,ORS Electrolyte Powder,sachet
+11222,49,Inhaler - Salbutamol,unit
+11223,49,Nebulizer Solution,ampoule
+11224,49,Antacid Liquid,bottle
+11225,49,Zinc Tablets,tablet
+11226,50,Paracetamol 500mg,tablet
+11227,50,Paracetamol 650mg,tablet
+11228,50,ORS Sachet,sachet
+11229,50,IV Normal Saline 0.9%,liter
+11230,50,IV Ringer Lactate,liter
+11231,50,IV Dextrose 5%,liter
+11232,50,Ibuprofen 400mg,tablet
+11233,50,Cetirizine 10mg,tablet
+11234,50,Azithromycin 500mg,tablet
+11235,50,Doxycycline 100mg,tablet
+11236,50,Amoxicillin 500mg,capsule
+11237,50,N95 Mask,piece
+11238,50,Surgical Mask,piece
+11239,50,Gloves (Latex),pair
+11240,50,Sanitizer 100ml,bottle
+11241,50,Bandage Roll,piece
+11242,50,Gauze Pack,pack
+11243,50,Syringe 5ml,piece
+11244,50,Syringe 10ml,piece
+11245,50,IV Cannula,piece
+11246,50,ORS Electrolyte Powder,sachet
+11247,50,Inhaler - Salbutamol,unit
+11248,50,Nebulizer Solution,ampoule
+11249,50,Antacid Liquid,bottle
+11250,50,Zinc Tablets,tablet
+11251,51,Paracetamol 500mg,tablet
+11252,51,Paracetamol 650mg,tablet
+11253,51,ORS Sachet,sachet
+11254,51,IV Normal Saline 0.9%,liter
+11255,51,IV Ringer Lactate,liter
+11256,51,IV Dextrose 5%,liter
+11257,51,Ibuprofen 400mg,tablet
+11258,51,Cetirizine 10mg,tablet
+11259,51,Azithromycin 500mg,tablet
+11260,51,Doxycycline 100mg,tablet
+11261,51,Amoxicillin 500mg,capsule
+11262,51,N95 Mask,piece
+11263,51,Surgical Mask,piece
+11264,51,Gloves (Latex),pair
+11265,51,Sanitizer 100ml,bottle
+11266,51,Bandage Roll,piece
+11267,51,Gauze Pack,pack
+11268,51,Syringe 5ml,piece
+11269,51,Syringe 10ml,piece
+11270,51,IV Cannula,piece
+11271,51,ORS Electrolyte Powder,sachet
+11272,51,Inhaler - Salbutamol,unit
+11273,51,Nebulizer Solution,ampoule
+11274,51,Antacid Liquid,bottle
+11275,51,Zinc Tablets,tablet
+11276,52,Paracetamol 500mg,tablet
+11277,52,Paracetamol 650mg,tablet
+11278,52,ORS Sachet,sachet
+11279,52,IV Normal Saline 0.9%,liter
+11280,52,IV Ringer Lactate,liter
+11281,52,IV Dextrose 5%,liter
+11282,52,Ibuprofen 400mg,tablet
+11283,52,Cetirizine 10mg,tablet
+11284,52,Azithromycin 500mg,tablet
+11285,52,Doxycycline 100mg,tablet
+11286,52,Amoxicillin 500mg,capsule
+11287,52,N95 Mask,piece
+11288,52,Surgical Mask,piece
+11289,52,Gloves (Latex),pair
+11290,52,Sanitizer 100ml,bottle
+11291,52,Bandage Roll,piece
+11292,52,Gauze Pack,pack
+11293,52,Syringe 5ml,piece
+11294,52,Syringe 10ml,piece
+11295,52,IV Cannula,piece
+11296,52,ORS Electrolyte Powder,sachet
+11297,52,Inhaler - Salbutamol,unit
+11298,52,Nebulizer Solution,ampoule
+11299,52,Antacid Liquid,bottle
+11300,52,Zinc Tablets,tablet
+11301,53,Paracetamol 500mg,tablet
+11302,53,Paracetamol 650mg,tablet
+11303,53,ORS Sachet,sachet
+11304,53,IV Normal Saline 0.9%,liter
+11305,53,IV Ringer Lactate,liter
+11306,53,IV Dextrose 5%,liter
+11307,53,Ibuprofen 400mg,tablet
+11308,53,Cetirizine 10mg,tablet
+11309,53,Azithromycin 500mg,tablet
+11310,53,Doxycycline 100mg,tablet
+11311,53,Amoxicillin 500mg,capsule
+11312,53,N95 Mask,piece
+11313,53,Surgical Mask,piece
+11314,53,Gloves (Latex),pair
+11315,53,Sanitizer 100ml,bottle
+11316,53,Bandage Roll,piece
+11317,53,Gauze Pack,pack
+11318,53,Syringe 5ml,piece
+11319,53,Syringe 10ml,piece
+11320,53,IV Cannula,piece
+11321,53,ORS Electrolyte Powder,sachet
+11322,53,Inhaler - Salbutamol,unit
+11323,53,Nebulizer Solution,ampoule
+11324,53,Antacid Liquid,bottle
+11325,53,Zinc Tablets,tablet
+11326,54,Paracetamol 500mg,tablet
+11327,54,Paracetamol 650mg,tablet
+11328,54,ORS Sachet,sachet
+11329,54,IV Normal Saline 0.9%,liter
+11330,54,IV Ringer Lactate,liter
+11331,54,IV Dextrose 5%,liter
+11332,54,Ibuprofen 400mg,tablet
+11333,54,Cetirizine 10mg,tablet
+11334,54,Azithromycin 500mg,tablet
+11335,54,Doxycycline 100mg,tablet
+11336,54,Amoxicillin 500mg,capsule
+11337,54,N95 Mask,piece
+11338,54,Surgical Mask,piece
+11339,54,Gloves (Latex),pair
+11340,54,Sanitizer 100ml,bottle
+11341,54,Bandage Roll,piece
+11342,54,Gauze Pack,pack
+11343,54,Syringe 5ml,piece
+11344,54,Syringe 10ml,piece
+11345,54,IV Cannula,piece
+11346,54,ORS Electrolyte Powder,sachet
+11347,54,Inhaler - Salbutamol,unit
+11348,54,Nebulizer Solution,ampoule
+11349,54,Antacid Liquid,bottle
+11350,54,Zinc Tablets,tablet
+11351,55,Paracetamol 500mg,tablet
+11352,55,Paracetamol 650mg,tablet
+11353,55,ORS Sachet,sachet
+11354,55,IV Normal Saline 0.9%,liter
+11355,55,IV Ringer Lactate,liter
+11356,55,IV Dextrose 5%,liter
+11357,55,Ibuprofen 400mg,tablet
+11358,55,Cetirizine 10mg,tablet
+11359,55,Azithromycin 500mg,tablet
+11360,55,Doxycycline 100mg,tablet
+11361,55,Amoxicillin 500mg,capsule
+11362,55,N95 Mask,piece
+11363,55,Surgical Mask,piece
+11364,55,Gloves (Latex),pair
+11365,55,Sanitizer 100ml,bottle
+11366,55,Bandage Roll,piece
+11367,55,Gauze Pack,pack
+11368,55,Syringe 5ml,piece
+11369,55,Syringe 10ml,piece
+11370,55,IV Cannula,piece
+11371,55,ORS Electrolyte Powder,sachet
+11372,55,Inhaler - Salbutamol,unit
+11373,55,Nebulizer Solution,ampoule
+11374,55,Antacid Liquid,bottle
+11375,55,Zinc Tablets,tablet
+11376,56,Paracetamol 500mg,tablet
+11377,56,Paracetamol 650mg,tablet
+11378,56,ORS Sachet,sachet
+11379,56,IV Normal Saline 0.9%,liter
+11380,56,IV Ringer Lactate,liter
+11381,56,IV Dextrose 5%,liter
+11382,56,Ibuprofen 400mg,tablet
+11383,56,Cetirizine 10mg,tablet
+11384,56,Azithromycin 500mg,tablet
+11385,56,Doxycycline 100mg,tablet
+11386,56,Amoxicillin 500mg,capsule
+11387,56,N95 Mask,piece
+11388,56,Surgical Mask,piece
+11389,56,Gloves (Latex),pair
+11390,56,Sanitizer 100ml,bottle
+11391,56,Bandage Roll,piece
+11392,56,Gauze Pack,pack
+11393,56,Syringe 5ml,piece
+11394,56,Syringe 10ml,piece
+11395,56,IV Cannula,piece
+11396,56,ORS Electrolyte Powder,sachet
+11397,56,Inhaler - Salbutamol,unit
+11398,56,Nebulizer Solution,ampoule
+11399,56,Antacid Liquid,bottle
+11400,56,Zinc Tablets,tablet
+11401,57,Paracetamol 500mg,tablet
+11402,57,Paracetamol 650mg,tablet
+11403,57,ORS Sachet,sachet
+11404,57,IV Normal Saline 0.9%,liter
+11405,57,IV Ringer Lactate,liter
+11406,57,IV Dextrose 5%,liter
+11407,57,Ibuprofen 400mg,tablet
+11408,57,Cetirizine 10mg,tablet
+11409,57,Azithromycin 500mg,tablet
+11410,57,Doxycycline 100mg,tablet
+11411,57,Amoxicillin 500mg,capsule
+11412,57,N95 Mask,piece
+11413,57,Surgical Mask,piece
+11414,57,Gloves (Latex),pair
+11415,57,Sanitizer 100ml,bottle
+11416,57,Bandage Roll,piece
+11417,57,Gauze Pack,pack
+11418,57,Syringe 5ml,piece
+11419,57,Syringe 10ml,piece
+11420,57,IV Cannula,piece
+11421,57,ORS Electrolyte Powder,sachet
+11422,57,Inhaler - Salbutamol,unit
+11423,57,Nebulizer Solution,ampoule
+11424,57,Antacid Liquid,bottle
+11425,57,Zinc Tablets,tablet
+11426,58,Paracetamol 500mg,tablet
+11427,58,Paracetamol 650mg,tablet
+11428,58,ORS Sachet,sachet
+11429,58,IV Normal Saline 0.9%,liter
+11430,58,IV Ringer Lactate,liter
+11431,58,IV Dextrose 5%,liter
+11432,58,Ibuprofen 400mg,tablet
+11433,58,Cetirizine 10mg,tablet
+11434,58,Azithromycin 500mg,tablet
+11435,58,Doxycycline 100mg,tablet
+11436,58,Amoxicillin 500mg,capsule
+11437,58,N95 Mask,piece
+11438,58,Surgical Mask,piece
+11439,58,Gloves (Latex),pair
+11440,58,Sanitizer 100ml,bottle
+11441,58,Bandage Roll,piece
+11442,58,Gauze Pack,pack
+11443,58,Syringe 5ml,piece
+11444,58,Syringe 10ml,piece
+11445,58,IV Cannula,piece
+11446,58,ORS Electrolyte Powder,sachet
+11447,58,Inhaler - Salbutamol,unit
+11448,58,Nebulizer Solution,ampoule
+11449,58,Antacid Liquid,bottle
+11450,58,Zinc Tablets,tablet
+11451,59,Paracetamol 500mg,tablet
+11452,59,Paracetamol 650mg,tablet
+11453,59,ORS Sachet,sachet
+11454,59,IV Normal Saline 0.9%,liter
+11455,59,IV Ringer Lactate,liter
+11456,59,IV Dextrose 5%,liter
+11457,59,Ibuprofen 400mg,tablet
+11458,59,Cetirizine 10mg,tablet
+11459,59,Azithromycin 500mg,tablet
+11460,59,Doxycycline 100mg,tablet
+11461,59,Amoxicillin 500mg,capsule
+11462,59,N95 Mask,piece
+11463,59,Surgical Mask,piece
+11464,59,Gloves (Latex),pair
+11465,59,Sanitizer 100ml,bottle
+11466,59,Bandage Roll,piece
+11467,59,Gauze Pack,pack
+11468,59,Syringe 5ml,piece
+11469,59,Syringe 10ml,piece
+11470,59,IV Cannula,piece
+11471,59,ORS Electrolyte Powder,sachet
+11472,59,Inhaler - Salbutamol,unit
+11473,59,Nebulizer Solution,ampoule
+11474,59,Antacid Liquid,bottle
+11475,59,Zinc Tablets,tablet
+11476,60,Paracetamol 500mg,tablet
+11477,60,Paracetamol 650mg,tablet
+11478,60,ORS Sachet,sachet
+11479,60,IV Normal Saline 0.9%,liter
+11480,60,IV Ringer Lactate,liter
+11481,60,IV Dextrose 5%,liter
+11482,60,Ibuprofen 400mg,tablet
+11483,60,Cetirizine 10mg,tablet
+11484,60,Azithromycin 500mg,tablet
+11485,60,Doxycycline 100mg,tablet
+11486,60,Amoxicillin 500mg,capsule
+11487,60,N95 Mask,piece
+11488,60,Surgical Mask,piece
+11489,60,Gloves (Latex),pair
+11490,60,Sanitizer 100ml,bottle
+11491,60,Bandage Roll,piece
+11492,60,Gauze Pack,pack
+11493,60,Syringe 5ml,piece
+11494,60,Syringe 10ml,piece
+11495,60,IV Cannula,piece
+11496,60,ORS Electrolyte Powder,sachet
+11497,60,Inhaler - Salbutamol,unit
+11498,60,Nebulizer Solution,ampoule
+11499,60,Antacid Liquid,bottle
+11500,60,Zinc Tablets,tablet
+11501,61,Paracetamol 500mg,tablet
+11502,61,Paracetamol 650mg,tablet
+11503,61,ORS Sachet,sachet
+11504,61,IV Normal Saline 0.9%,liter
+11505,61,IV Ringer Lactate,liter
+11506,61,IV Dextrose 5%,liter
+11507,61,Ibuprofen 400mg,tablet
+11508,61,Cetirizine 10mg,tablet
+11509,61,Azithromycin 500mg,tablet
+11510,61,Doxycycline 100mg,tablet
+11511,61,Amoxicillin 500mg,capsule
+11512,61,N95 Mask,piece
+11513,61,Surgical Mask,piece
+11514,61,Gloves (Latex),pair
+11515,61,Sanitizer 100ml,bottle
+11516,61,Bandage Roll,piece
+11517,61,Gauze Pack,pack
+11518,61,Syringe 5ml,piece
+11519,61,Syringe 10ml,piece
+11520,61,IV Cannula,piece
+11521,61,ORS Electrolyte Powder,sachet
+11522,61,Inhaler - Salbutamol,unit
+11523,61,Nebulizer Solution,ampoule
+11524,61,Antacid Liquid,bottle
+11525,61,Zinc Tablets,tablet
+11526,62,Paracetamol 500mg,tablet
+11527,62,Paracetamol 650mg,tablet
+11528,62,ORS Sachet,sachet
+11529,62,IV Normal Saline 0.9%,liter
+11530,62,IV Ringer Lactate,liter
+11531,62,IV Dextrose 5%,liter
+11532,62,Ibuprofen 400mg,tablet
+11533,62,Cetirizine 10mg,tablet
+11534,62,Azithromycin 500mg,tablet
+11535,62,Doxycycline 100mg,tablet
+11536,62,Amoxicillin 500mg,capsule
+11537,62,N95 Mask,piece
+11538,62,Surgical Mask,piece
+11539,62,Gloves (Latex),pair
+11540,62,Sanitizer 100ml,bottle
+11541,62,Bandage Roll,piece
+11542,62,Gauze Pack,pack
+11543,62,Syringe 5ml,piece
+11544,62,Syringe 10ml,piece
+11545,62,IV Cannula,piece
+11546,62,ORS Electrolyte Powder,sachet
+11547,62,Inhaler - Salbutamol,unit
+11548,62,Nebulizer Solution,ampoule
+11549,62,Antacid Liquid,bottle
+11550,62,Zinc Tablets,tablet
+11551,63,Paracetamol 500mg,tablet
+11552,63,Paracetamol 650mg,tablet
+11553,63,ORS Sachet,sachet
+11554,63,IV Normal Saline 0.9%,liter
+11555,63,IV Ringer Lactate,liter
+11556,63,IV Dextrose 5%,liter
+11557,63,Ibuprofen 400mg,tablet
+11558,63,Cetirizine 10mg,tablet
+11559,63,Azithromycin 500mg,tablet
+11560,63,Doxycycline 100mg,tablet
+11561,63,Amoxicillin 500mg,capsule
+11562,63,N95 Mask,piece
+11563,63,Surgical Mask,piece
+11564,63,Gloves (Latex),pair
+11565,63,Sanitizer 100ml,bottle
+11566,63,Bandage Roll,piece
+11567,63,Gauze Pack,pack
+11568,63,Syringe 5ml,piece
+11569,63,Syringe 10ml,piece
+11570,63,IV Cannula,piece
+11571,63,ORS Electrolyte Powder,sachet
+11572,63,Inhaler - Salbutamol,unit
+11573,63,Nebulizer Solution,ampoule
+11574,63,Antacid Liquid,bottle
+11575,63,Zinc Tablets,tablet
+11576,64,Paracetamol 500mg,tablet
+11577,64,Paracetamol 650mg,tablet
+11578,64,ORS Sachet,sachet
+11579,64,IV Normal Saline 0.9%,liter
+11580,64,IV Ringer Lactate,liter
+11581,64,IV Dextrose 5%,liter
+11582,64,Ibuprofen 400mg,tablet
+11583,64,Cetirizine 10mg,tablet
+11584,64,Azithromycin 500mg,tablet
+11585,64,Doxycycline 100mg,tablet
+11586,64,Amoxicillin 500mg,capsule
+11587,64,N95 Mask,piece
+11588,64,Surgical Mask,piece
+11589,64,Gloves (Latex),pair
+11590,64,Sanitizer 100ml,bottle
+11591,64,Bandage Roll,piece
+11592,64,Gauze Pack,pack
+11593,64,Syringe 5ml,piece
+11594,64,Syringe 10ml,piece
+11595,64,IV Cannula,piece
+11596,64,ORS Electrolyte Powder,sachet
+11597,64,Inhaler - Salbutamol,unit
+11598,64,Nebulizer Solution,ampoule
+11599,64,Antacid Liquid,bottle
+11600,64,Zinc Tablets,tablet
+11601,65,Paracetamol 500mg,tablet
+11602,65,Paracetamol 650mg,tablet
+11603,65,ORS Sachet,sachet
+11604,65,IV Normal Saline 0.9%,liter
+11605,65,IV Ringer Lactate,liter
+11606,65,IV Dextrose 5%,liter
+11607,65,Ibuprofen 400mg,tablet
+11608,65,Cetirizine 10mg,tablet
+11609,65,Azithromycin 500mg,tablet
+11610,65,Doxycycline 100mg,tablet
+11611,65,Amoxicillin 500mg,capsule
+11612,65,N95 Mask,piece
+11613,65,Surgical Mask,piece
+11614,65,Gloves (Latex),pair
+11615,65,Sanitizer 100ml,bottle
+11616,65,Bandage Roll,piece
+11617,65,Gauze Pack,pack
+11618,65,Syringe 5ml,piece
+11619,65,Syringe 10ml,piece
+11620,65,IV Cannula,piece
+11621,65,ORS Electrolyte Powder,sachet
+11622,65,Inhaler - Salbutamol,unit
+11623,65,Nebulizer Solution,ampoule
+11624,65,Antacid Liquid,bottle
+11625,65,Zinc Tablets,tablet
+11626,66,Paracetamol 500mg,tablet
+11627,66,Paracetamol 650mg,tablet
+11628,66,ORS Sachet,sachet
+11629,66,IV Normal Saline 0.9%,liter
+11630,66,IV Ringer Lactate,liter
+11631,66,IV Dextrose 5%,liter
+11632,66,Ibuprofen 400mg,tablet
+11633,66,Cetirizine 10mg,tablet
+11634,66,Azithromycin 500mg,tablet
+11635,66,Doxycycline 100mg,tablet
+11636,66,Amoxicillin 500mg,capsule
+11637,66,N95 Mask,piece
+11638,66,Surgical Mask,piece
+11639,66,Gloves (Latex),pair
+11640,66,Sanitizer 100ml,bottle
+11641,66,Bandage Roll,piece
+11642,66,Gauze Pack,pack
+11643,66,Syringe 5ml,piece
+11644,66,Syringe 10ml,piece
+11645,66,IV Cannula,piece
+11646,66,ORS Electrolyte Powder,sachet
+11647,66,Inhaler - Salbutamol,unit
+11648,66,Nebulizer Solution,ampoule
+11649,66,Antacid Liquid,bottle
+11650,66,Zinc Tablets,tablet
+11651,67,Paracetamol 500mg,tablet
+11652,67,Paracetamol 650mg,tablet
+11653,67,ORS Sachet,sachet
+11654,67,IV Normal Saline 0.9%,liter
+11655,67,IV Ringer Lactate,liter
+11656,67,IV Dextrose 5%,liter
+11657,67,Ibuprofen 400mg,tablet
+11658,67,Cetirizine 10mg,tablet
+11659,67,Azithromycin 500mg,tablet
+11660,67,Doxycycline 100mg,tablet
+11661,67,Amoxicillin 500mg,capsule
+11662,67,N95 Mask,piece
+11663,67,Surgical Mask,piece
+11664,67,Gloves (Latex),pair
+11665,67,Sanitizer 100ml,bottle
+11666,67,Bandage Roll,piece
+11667,67,Gauze Pack,pack
+11668,67,Syringe 5ml,piece
+11669,67,Syringe 10ml,piece
+11670,67,IV Cannula,piece
+11671,67,ORS Electrolyte Powder,sachet
+11672,67,Inhaler - Salbutamol,unit
+11673,67,Nebulizer Solution,ampoule
+11674,67,Antacid Liquid,bottle
+11675,67,Zinc Tablets,tablet
+11676,68,Paracetamol 500mg,tablet
+11677,68,Paracetamol 650mg,tablet
+11678,68,ORS Sachet,sachet
+11679,68,IV Normal Saline 0.9%,liter
+11680,68,IV Ringer Lactate,liter
+11681,68,IV Dextrose 5%,liter
+11682,68,Ibuprofen 400mg,tablet
+11683,68,Cetirizine 10mg,tablet
+11684,68,Azithromycin 500mg,tablet
+11685,68,Doxycycline 100mg,tablet
+11686,68,Amoxicillin 500mg,capsule
+11687,68,N95 Mask,piece
+11688,68,Surgical Mask,piece
+11689,68,Gloves (Latex),pair
+11690,68,Sanitizer 100ml,bottle
+11691,68,Bandage Roll,piece
+11692,68,Gauze Pack,pack
+11693,68,Syringe 5ml,piece
+11694,68,Syringe 10ml,piece
+11695,68,IV Cannula,piece
+11696,68,ORS Electrolyte Powder,sachet
+11697,68,Inhaler - Salbutamol,unit
+11698,68,Nebulizer Solution,ampoule
+11699,68,Antacid Liquid,bottle
+11700,68,Zinc Tablets,tablet
+11701,69,Paracetamol 500mg,tablet
+11702,69,Paracetamol 650mg,tablet
+11703,69,ORS Sachet,sachet
+11704,69,IV Normal Saline 0.9%,liter
+11705,69,IV Ringer Lactate,liter
+11706,69,IV Dextrose 5%,liter
+11707,69,Ibuprofen 400mg,tablet
+11708,69,Cetirizine 10mg,tablet
+11709,69,Azithromycin 500mg,tablet
+11710,69,Doxycycline 100mg,tablet
+11711,69,Amoxicillin 500mg,capsule
+11712,69,N95 Mask,piece
+11713,69,Surgical Mask,piece
+11714,69,Gloves (Latex),pair
+11715,69,Sanitizer 100ml,bottle
+11716,69,Bandage Roll,piece
+11717,69,Gauze Pack,pack
+11718,69,Syringe 5ml,piece
+11719,69,Syringe 10ml,piece
+11720,69,IV Cannula,piece
+11721,69,ORS Electrolyte Powder,sachet
+11722,69,Inhaler - Salbutamol,unit
+11723,69,Nebulizer Solution,ampoule
+11724,69,Antacid Liquid,bottle
+11725,69,Zinc Tablets,tablet
+11726,70,Paracetamol 500mg,tablet
+11727,70,Paracetamol 650mg,tablet
+11728,70,ORS Sachet,sachet
+11729,70,IV Normal Saline 0.9%,liter
+11730,70,IV Ringer Lactate,liter
+11731,70,IV Dextrose 5%,liter
+11732,70,Ibuprofen 400mg,tablet
+11733,70,Cetirizine 10mg,tablet
+11734,70,Azithromycin 500mg,tablet
+11735,70,Doxycycline 100mg,tablet
+11736,70,Amoxicillin 500mg,capsule
+11737,70,N95 Mask,piece
+11738,70,Surgical Mask,piece
+11739,70,Gloves (Latex),pair
+11740,70,Sanitizer 100ml,bottle
+11741,70,Bandage Roll,piece
+11742,70,Gauze Pack,pack
+11743,70,Syringe 5ml,piece
+11744,70,Syringe 10ml,piece
+11745,70,IV Cannula,piece
+11746,70,ORS Electrolyte Powder,sachet
+11747,70,Inhaler - Salbutamol,unit
+11748,70,Nebulizer Solution,ampoule
+11749,70,Antacid Liquid,bottle
+11750,70,Zinc Tablets,tablet
+11751,71,Paracetamol 500mg,tablet
+11752,71,Paracetamol 650mg,tablet
+11753,71,ORS Sachet,sachet
+11754,71,IV Normal Saline 0.9%,liter
+11755,71,IV Ringer Lactate,liter
+11756,71,IV Dextrose 5%,liter
+11757,71,Ibuprofen 400mg,tablet
+11758,71,Cetirizine 10mg,tablet
+11759,71,Azithromycin 500mg,tablet
+11760,71,Doxycycline 100mg,tablet
+11761,71,Amoxicillin 500mg,capsule
+11762,71,N95 Mask,piece
+11763,71,Surgical Mask,piece
+11764,71,Gloves (Latex),pair
+11765,71,Sanitizer 100ml,bottle
+11766,71,Bandage Roll,piece
+11767,71,Gauze Pack,pack
+11768,71,Syringe 5ml,piece
+11769,71,Syringe 10ml,piece
+11770,71,IV Cannula,piece
+11771,71,ORS Electrolyte Powder,sachet
+11772,71,Inhaler - Salbutamol,unit
+11773,71,Nebulizer Solution,ampoule
+11774,71,Antacid Liquid,bottle
+11775,71,Zinc Tablets,tablet
+11776,72,Paracetamol 500mg,tablet
+11777,72,Paracetamol 650mg,tablet
+11778,72,ORS Sachet,sachet
+11779,72,IV Normal Saline 0.9%,liter
+11780,72,IV Ringer Lactate,liter
+11781,72,IV Dextrose 5%,liter
+11782,72,Ibuprofen 400mg,tablet
+11783,72,Cetirizine 10mg,tablet
+11784,72,Azithromycin 500mg,tablet
+11785,72,Doxycycline 100mg,tablet
+11786,72,Amoxicillin 500mg,capsule
+11787,72,N95 Mask,piece
+11788,72,Surgical Mask,piece
+11789,72,Gloves (Latex),pair
+11790,72,Sanitizer 100ml,bottle
+11791,72,Bandage Roll,piece
+11792,72,Gauze Pack,pack
+11793,72,Syringe 5ml,piece
+11794,72,Syringe 10ml,piece
+11795,72,IV Cannula,piece
+11796,72,ORS Electrolyte Powder,sachet
+11797,72,Inhaler - Salbutamol,unit
+11798,72,Nebulizer Solution,ampoule
+11799,72,Antacid Liquid,bottle
+11800,72,Zinc Tablets,tablet
+11801,73,Paracetamol 500mg,tablet
+11802,73,Paracetamol 650mg,tablet
+11803,73,ORS Sachet,sachet
+11804,73,IV Normal Saline 0.9%,liter
+11805,73,IV Ringer Lactate,liter
+11806,73,IV Dextrose 5%,liter
+11807,73,Ibuprofen 400mg,tablet
+11808,73,Cetirizine 10mg,tablet
+11809,73,Azithromycin 500mg,tablet
+11810,73,Doxycycline 100mg,tablet
+11811,73,Amoxicillin 500mg,capsule
+11812,73,N95 Mask,piece
+11813,73,Surgical Mask,piece
+11814,73,Gloves (Latex),pair
+11815,73,Sanitizer 100ml,bottle
+11816,73,Bandage Roll,piece
+11817,73,Gauze Pack,pack
+11818,73,Syringe 5ml,piece
+11819,73,Syringe 10ml,piece
+11820,73,IV Cannula,piece
+11821,73,ORS Electrolyte Powder,sachet
+11822,73,Inhaler - Salbutamol,unit
+11823,73,Nebulizer Solution,ampoule
+11824,73,Antacid Liquid,bottle
+11825,73,Zinc Tablets,tablet
+11826,74,Paracetamol 500mg,tablet
+11827,74,Paracetamol 650mg,tablet
+11828,74,ORS Sachet,sachet
+11829,74,IV Normal Saline 0.9%,liter
+11830,74,IV Ringer Lactate,liter
+11831,74,IV Dextrose 5%,liter
+11832,74,Ibuprofen 400mg,tablet
+11833,74,Cetirizine 10mg,tablet
+11834,74,Azithromycin 500mg,tablet
+11835,74,Doxycycline 100mg,tablet
+11836,74,Amoxicillin 500mg,capsule
+11837,74,N95 Mask,piece
+11838,74,Surgical Mask,piece
+11839,74,Gloves (Latex),pair
+11840,74,Sanitizer 100ml,bottle
+11841,74,Bandage Roll,piece
+11842,74,Gauze Pack,pack
+11843,74,Syringe 5ml,piece
+11844,74,Syringe 10ml,piece
+11845,74,IV Cannula,piece
+11846,74,ORS Electrolyte Powder,sachet
+11847,74,Inhaler - Salbutamol,unit
+11848,74,Nebulizer Solution,ampoule
+11849,74,Antacid Liquid,bottle
+11850,74,Zinc Tablets,tablet
+11851,75,Paracetamol 500mg,tablet
+11852,75,Paracetamol 650mg,tablet
+11853,75,ORS Sachet,sachet
+11854,75,IV Normal Saline 0.9%,liter
+11855,75,IV Ringer Lactate,liter
+11856,75,IV Dextrose 5%,liter
+11857,75,Ibuprofen 400mg,tablet
+11858,75,Cetirizine 10mg,tablet
+11859,75,Azithromycin 500mg,tablet
+11860,75,Doxycycline 100mg,tablet
+11861,75,Amoxicillin 500mg,capsule
+11862,75,N95 Mask,piece
+11863,75,Surgical Mask,piece
+11864,75,Gloves (Latex),pair
+11865,75,Sanitizer 100ml,bottle
+11866,75,Bandage Roll,piece
+11867,75,Gauze Pack,pack
+11868,75,Syringe 5ml,piece
+11869,75,Syringe 10ml,piece
+11870,75,IV Cannula,piece
+11871,75,ORS Electrolyte Powder,sachet
+11872,75,Inhaler - Salbutamol,unit
+11873,75,Nebulizer Solution,ampoule
+11874,75,Antacid Liquid,bottle
+11875,75,Zinc Tablets,tablet
+11876,76,Paracetamol 500mg,tablet
+11877,76,Paracetamol 650mg,tablet
+11878,76,ORS Sachet,sachet
+11879,76,IV Normal Saline 0.9%,liter
+11880,76,IV Ringer Lactate,liter
+11881,76,IV Dextrose 5%,liter
+11882,76,Ibuprofen 400mg,tablet
+11883,76,Cetirizine 10mg,tablet
+11884,76,Azithromycin 500mg,tablet
+11885,76,Doxycycline 100mg,tablet
+11886,76,Amoxicillin 500mg,capsule
+11887,76,N95 Mask,piece
+11888,76,Surgical Mask,piece
+11889,76,Gloves (Latex),pair
+11890,76,Sanitizer 100ml,bottle
+11891,76,Bandage Roll,piece
+11892,76,Gauze Pack,pack
+11893,76,Syringe 5ml,piece
+11894,76,Syringe 10ml,piece
+11895,76,IV Cannula,piece
+11896,76,ORS Electrolyte Powder,sachet
+11897,76,Inhaler - Salbutamol,unit
+11898,76,Nebulizer Solution,ampoule
+11899,76,Antacid Liquid,bottle
+11900,76,Zinc Tablets,tablet
+11901,77,Paracetamol 500mg,tablet
+11902,77,Paracetamol 650mg,tablet
+11903,77,ORS Sachet,sachet
+11904,77,IV Normal Saline 0.9%,liter
+11905,77,IV Ringer Lactate,liter
+11906,77,IV Dextrose 5%,liter
+11907,77,Ibuprofen 400mg,tablet
+11908,77,Cetirizine 10mg,tablet
+11909,77,Azithromycin 500mg,tablet
+11910,77,Doxycycline 100mg,tablet
+11911,77,Amoxicillin 500mg,capsule
+11912,77,N95 Mask,piece
+11913,77,Surgical Mask,piece
+11914,77,Gloves (Latex),pair
+11915,77,Sanitizer 100ml,bottle
+11916,77,Bandage Roll,piece
+11917,77,Gauze Pack,pack
+11918,77,Syringe 5ml,piece
+11919,77,Syringe 10ml,piece
+11920,77,IV Cannula,piece
+11921,77,ORS Electrolyte Powder,sachet
+11922,77,Inhaler - Salbutamol,unit
+11923,77,Nebulizer Solution,ampoule
+11924,77,Antacid Liquid,bottle
+11925,77,Zinc Tablets,tablet
+11926,78,Paracetamol 500mg,tablet
+11927,78,Paracetamol 650mg,tablet
+11928,78,ORS Sachet,sachet
+11929,78,IV Normal Saline 0.9%,liter
+11930,78,IV Ringer Lactate,liter
+11931,78,IV Dextrose 5%,liter
+11932,78,Ibuprofen 400mg,tablet
+11933,78,Cetirizine 10mg,tablet
+11934,78,Azithromycin 500mg,tablet
+11935,78,Doxycycline 100mg,tablet
+11936,78,Amoxicillin 500mg,capsule
+11937,78,N95 Mask,piece
+11938,78,Surgical Mask,piece
+11939,78,Gloves (Latex),pair
+11940,78,Sanitizer 100ml,bottle
+11941,78,Bandage Roll,piece
+11942,78,Gauze Pack,pack
+11943,78,Syringe 5ml,piece
+11944,78,Syringe 10ml,piece
+11945,78,IV Cannula,piece
+11946,78,ORS Electrolyte Powder,sachet
+11947,78,Inhaler - Salbutamol,unit
+11948,78,Nebulizer Solution,ampoule
+11949,78,Antacid Liquid,bottle
+11950,78,Zinc Tablets,tablet
+11951,79,Paracetamol 500mg,tablet
+11952,79,Paracetamol 650mg,tablet
+11953,79,ORS Sachet,sachet
+11954,79,IV Normal Saline 0.9%,liter
+11955,79,IV Ringer Lactate,liter
+11956,79,IV Dextrose 5%,liter
+11957,79,Ibuprofen 400mg,tablet
+11958,79,Cetirizine 10mg,tablet
+11959,79,Azithromycin 500mg,tablet
+11960,79,Doxycycline 100mg,tablet
+11961,79,Amoxicillin 500mg,capsule
+11962,79,N95 Mask,piece
+11963,79,Surgical Mask,piece
+11964,79,Gloves (Latex),pair
+11965,79,Sanitizer 100ml,bottle
+11966,79,Bandage Roll,piece
+11967,79,Gauze Pack,pack
+11968,79,Syringe 5ml,piece
+11969,79,Syringe 10ml,piece
+11970,79,IV Cannula,piece
+11971,79,ORS Electrolyte Powder,sachet
+11972,79,Inhaler - Salbutamol,unit
+11973,79,Nebulizer Solution,ampoule
+11974,79,Antacid Liquid,bottle
+11975,79,Zinc Tablets,tablet
+11976,80,Paracetamol 500mg,tablet
+11977,80,Paracetamol 650mg,tablet
+11978,80,ORS Sachet,sachet
+11979,80,IV Normal Saline 0.9%,liter
+11980,80,IV Ringer Lactate,liter
+11981,80,IV Dextrose 5%,liter
+11982,80,Ibuprofen 400mg,tablet
+11983,80,Cetirizine 10mg,tablet
+11984,80,Azithromycin 500mg,tablet
+11985,80,Doxycycline 100mg,tablet
+11986,80,Amoxicillin 500mg,capsule
+11987,80,N95 Mask,piece
+11988,80,Surgical Mask,piece
+11989,80,Gloves (Latex),pair
+11990,80,Sanitizer 100ml,bottle
+11991,80,Bandage Roll,piece
+11992,80,Gauze Pack,pack
+11993,80,Syringe 5ml,piece
+11994,80,Syringe 10ml,piece
+11995,80,IV Cannula,piece
+11996,80,ORS Electrolyte Powder,sachet
+11997,80,Inhaler - Salbutamol,unit
+11998,80,Nebulizer Solution,ampoule
+11999,80,Antacid Liquid,bottle
+12000,80,Zinc Tablets,tablet
+12001,81,Paracetamol 500mg,tablet
+12002,81,Paracetamol 650mg,tablet
+12003,81,ORS Sachet,sachet
+12004,81,IV Normal Saline 0.9%,liter
+12005,81,IV Ringer Lactate,liter
+12006,81,IV Dextrose 5%,liter
+12007,81,Ibuprofen 400mg,tablet
+12008,81,Cetirizine 10mg,tablet
+12009,81,Azithromycin 500mg,tablet
+12010,81,Doxycycline 100mg,tablet
+12011,81,Amoxicillin 500mg,capsule
+12012,81,N95 Mask,piece
+12013,81,Surgical Mask,piece
+12014,81,Gloves (Latex),pair
+12015,81,Sanitizer 100ml,bottle
+12016,81,Bandage Roll,piece
+12017,81,Gauze Pack,pack
+12018,81,Syringe 5ml,piece
+12019,81,Syringe 10ml,piece
+12020,81,IV Cannula,piece
+12021,81,ORS Electrolyte Powder,sachet
+12022,81,Inhaler - Salbutamol,unit
+12023,81,Nebulizer Solution,ampoule
+12024,81,Antacid Liquid,bottle
+12025,81,Zinc Tablets,tablet
+12026,82,Paracetamol 500mg,tablet
+12027,82,Paracetamol 650mg,tablet
+12028,82,ORS Sachet,sachet
+12029,82,IV Normal Saline 0.9%,liter
+12030,82,IV Ringer Lactate,liter
+12031,82,IV Dextrose 5%,liter
+12032,82,Ibuprofen 400mg,tablet
+12033,82,Cetirizine 10mg,tablet
+12034,82,Azithromycin 500mg,tablet
+12035,82,Doxycycline 100mg,tablet
+12036,82,Amoxicillin 500mg,capsule
+12037,82,N95 Mask,piece
+12038,82,Surgical Mask,piece
+12039,82,Gloves (Latex),pair
+12040,82,Sanitizer 100ml,bottle
+12041,82,Bandage Roll,piece
+12042,82,Gauze Pack,pack
+12043,82,Syringe 5ml,piece
+12044,82,Syringe 10ml,piece
+12045,82,IV Cannula,piece
+12046,82,ORS Electrolyte Powder,sachet
+12047,82,Inhaler - Salbutamol,unit
+12048,82,Nebulizer Solution,ampoule
+12049,82,Antacid Liquid,bottle
+12050,82,Zinc Tablets,tablet
+12051,83,Paracetamol 500mg,tablet
+12052,83,Paracetamol 650mg,tablet
+12053,83,ORS Sachet,sachet
+12054,83,IV Normal Saline 0.9%,liter
+12055,83,IV Ringer Lactate,liter
+12056,83,IV Dextrose 5%,liter
+12057,83,Ibuprofen 400mg,tablet
+12058,83,Cetirizine 10mg,tablet
+12059,83,Azithromycin 500mg,tablet
+12060,83,Doxycycline 100mg,tablet
+12061,83,Amoxicillin 500mg,capsule
+12062,83,N95 Mask,piece
+12063,83,Surgical Mask,piece
+12064,83,Gloves (Latex),pair
+12065,83,Sanitizer 100ml,bottle
+12066,83,Bandage Roll,piece
+12067,83,Gauze Pack,pack
+12068,83,Syringe 5ml,piece
+12069,83,Syringe 10ml,piece
+12070,83,IV Cannula,piece
+12071,83,ORS Electrolyte Powder,sachet
+12072,83,Inhaler - Salbutamol,unit
+12073,83,Nebulizer Solution,ampoule
+12074,83,Antacid Liquid,bottle
+12075,83,Zinc Tablets,tablet
+12076,84,Paracetamol 500mg,tablet
+12077,84,Paracetamol 650mg,tablet
+12078,84,ORS Sachet,sachet
+12079,84,IV Normal Saline 0.9%,liter
+12080,84,IV Ringer Lactate,liter
+12081,84,IV Dextrose 5%,liter
+12082,84,Ibuprofen 400mg,tablet
+12083,84,Cetirizine 10mg,tablet
+12084,84,Azithromycin 500mg,tablet
+12085,84,Doxycycline 100mg,tablet
+12086,84,Amoxicillin 500mg,capsule
+12087,84,N95 Mask,piece
+12088,84,Surgical Mask,piece
+12089,84,Gloves (Latex),pair
+12090,84,Sanitizer 100ml,bottle
+12091,84,Bandage Roll,piece
+12092,84,Gauze Pack,pack
+12093,84,Syringe 5ml,piece
+12094,84,Syringe 10ml,piece
+12095,84,IV Cannula,piece
+12096,84,ORS Electrolyte Powder,sachet
+12097,84,Inhaler - Salbutamol,unit
+12098,84,Nebulizer Solution,ampoule
+12099,84,Antacid Liquid,bottle
+12100,84,Zinc Tablets,tablet
+12101,85,Paracetamol 500mg,tablet
+12102,85,Paracetamol 650mg,tablet
+12103,85,ORS Sachet,sachet
+12104,85,IV Normal Saline 0.9%,liter
+12105,85,IV Ringer Lactate,liter
+12106,85,IV Dextrose 5%,liter
+12107,85,Ibuprofen 400mg,tablet
+12108,85,Cetirizine 10mg,tablet
+12109,85,Azithromycin 500mg,tablet
+12110,85,Doxycycline 100mg,tablet
+12111,85,Amoxicillin 500mg,capsule
+12112,85,N95 Mask,piece
+12113,85,Surgical Mask,piece
+12114,85,Gloves (Latex),pair
+12115,85,Sanitizer 100ml,bottle
+12116,85,Bandage Roll,piece
+12117,85,Gauze Pack,pack
+12118,85,Syringe 5ml,piece
+12119,85,Syringe 10ml,piece
+12120,85,IV Cannula,piece
+12121,85,ORS Electrolyte Powder,sachet
+12122,85,Inhaler - Salbutamol,unit
+12123,85,Nebulizer Solution,ampoule
+12124,85,Antacid Liquid,bottle
+12125,85,Zinc Tablets,tablet
+12126,86,Paracetamol 500mg,tablet
+12127,86,Paracetamol 650mg,tablet
+12128,86,ORS Sachet,sachet
+12129,86,IV Normal Saline 0.9%,liter
+12130,86,IV Ringer Lactate,liter
+12131,86,IV Dextrose 5%,liter
+12132,86,Ibuprofen 400mg,tablet
+12133,86,Cetirizine 10mg,tablet
+12134,86,Azithromycin 500mg,tablet
+12135,86,Doxycycline 100mg,tablet
+12136,86,Amoxicillin 500mg,capsule
+12137,86,N95 Mask,piece
+12138,86,Surgical Mask,piece
+12139,86,Gloves (Latex),pair
+12140,86,Sanitizer 100ml,bottle
+12141,86,Bandage Roll,piece
+12142,86,Gauze Pack,pack
+12143,86,Syringe 5ml,piece
+12144,86,Syringe 10ml,piece
+12145,86,IV Cannula,piece
+12146,86,ORS Electrolyte Powder,sachet
+12147,86,Inhaler - Salbutamol,unit
+12148,86,Nebulizer Solution,ampoule
+12149,86,Antacid Liquid,bottle
+12150,86,Zinc Tablets,tablet
+12151,87,Paracetamol 500mg,tablet
+12152,87,Paracetamol 650mg,tablet
+12153,87,ORS Sachet,sachet
+12154,87,IV Normal Saline 0.9%,liter
+12155,87,IV Ringer Lactate,liter
+12156,87,IV Dextrose 5%,liter
+12157,87,Ibuprofen 400mg,tablet
+12158,87,Cetirizine 10mg,tablet
+12159,87,Azithromycin 500mg,tablet
+12160,87,Doxycycline 100mg,tablet
+12161,87,Amoxicillin 500mg,capsule
+12162,87,N95 Mask,piece
+12163,87,Surgical Mask,piece
+12164,87,Gloves (Latex),pair
+12165,87,Sanitizer 100ml,bottle
+12166,87,Bandage Roll,piece
+12167,87,Gauze Pack,pack
+12168,87,Syringe 5ml,piece
+12169,87,Syringe 10ml,piece
+12170,87,IV Cannula,piece
+12171,87,ORS Electrolyte Powder,sachet
+12172,87,Inhaler - Salbutamol,unit
+12173,87,Nebulizer Solution,ampoule
+12174,87,Antacid Liquid,bottle
+12175,87,Zinc Tablets,tablet
+12176,88,Paracetamol 500mg,tablet
+12177,88,Paracetamol 650mg,tablet
+12178,88,ORS Sachet,sachet
+12179,88,IV Normal Saline 0.9%,liter
+12180,88,IV Ringer Lactate,liter
+12181,88,IV Dextrose 5%,liter
+12182,88,Ibuprofen 400mg,tablet
+12183,88,Cetirizine 10mg,tablet
+12184,88,Azithromycin 500mg,tablet
+12185,88,Doxycycline 100mg,tablet
+12186,88,Amoxicillin 500mg,capsule
+12187,88,N95 Mask,piece
+12188,88,Surgical Mask,piece
+12189,88,Gloves (Latex),pair
+12190,88,Sanitizer 100ml,bottle
+12191,88,Bandage Roll,piece
+12192,88,Gauze Pack,pack
+12193,88,Syringe 5ml,piece
+12194,88,Syringe 10ml,piece
+12195,88,IV Cannula,piece
+12196,88,ORS Electrolyte Powder,sachet
+12197,88,Inhaler - Salbutamol,unit
+12198,88,Nebulizer Solution,ampoule
+12199,88,Antacid Liquid,bottle
+12200,88,Zinc Tablets,tablet
+12201,89,Paracetamol 500mg,tablet
+12202,89,Paracetamol 650mg,tablet
+12203,89,ORS Sachet,sachet
+12204,89,IV Normal Saline 0.9%,liter
+12205,89,IV Ringer Lactate,liter
+12206,89,IV Dextrose 5%,liter
+12207,89,Ibuprofen 400mg,tablet
+12208,89,Cetirizine 10mg,tablet
+12209,89,Azithromycin 500mg,tablet
+12210,89,Doxycycline 100mg,tablet
+12211,89,Amoxicillin 500mg,capsule
+12212,89,N95 Mask,piece
+12213,89,Surgical Mask,piece
+12214,89,Gloves (Latex),pair
+12215,89,Sanitizer 100ml,bottle
+12216,89,Bandage Roll,piece
+12217,89,Gauze Pack,pack
+12218,89,Syringe 5ml,piece
+12219,89,Syringe 10ml,piece
+12220,89,IV Cannula,piece
+12221,89,ORS Electrolyte Powder,sachet
+12222,89,Inhaler - Salbutamol,unit
+12223,89,Nebulizer Solution,ampoule
+12224,89,Antacid Liquid,bottle
+12225,89,Zinc Tablets,tablet
+12226,90,Paracetamol 500mg,tablet
+12227,90,Paracetamol 650mg,tablet
+12228,90,ORS Sachet,sachet
+12229,90,IV Normal Saline 0.9%,liter
+12230,90,IV Ringer Lactate,liter
+12231,90,IV Dextrose 5%,liter
+12232,90,Ibuprofen 400mg,tablet
+12233,90,Cetirizine 10mg,tablet
+12234,90,Azithromycin 500mg,tablet
+12235,90,Doxycycline 100mg,tablet
+12236,90,Amoxicillin 500mg,capsule
+12237,90,N95 Mask,piece
+12238,90,Surgical Mask,piece
+12239,90,Gloves (Latex),pair
+12240,90,Sanitizer 100ml,bottle
+12241,90,Bandage Roll,piece
+12242,90,Gauze Pack,pack
+12243,90,Syringe 5ml,piece
+12244,90,Syringe 10ml,piece
+12245,90,IV Cannula,piece
+12246,90,ORS Electrolyte Powder,sachet
+12247,90,Inhaler - Salbutamol,unit
+12248,90,Nebulizer Solution,ampoule
+12249,90,Antacid Liquid,bottle
+12250,90,Zinc Tablets,tablet
+12251,91,Paracetamol 500mg,tablet
+12252,91,Paracetamol 650mg,tablet
+12253,91,ORS Sachet,sachet
+12254,91,IV Normal Saline 0.9%,liter
+12255,91,IV Ringer Lactate,liter
+12256,91,IV Dextrose 5%,liter
+12257,91,Ibuprofen 400mg,tablet
+12258,91,Cetirizine 10mg,tablet
+12259,91,Azithromycin 500mg,tablet
+12260,91,Doxycycline 100mg,tablet
+12261,91,Amoxicillin 500mg,capsule
+12262,91,N95 Mask,piece
+12263,91,Surgical Mask,piece
+12264,91,Gloves (Latex),pair
+12265,91,Sanitizer 100ml,bottle
+12266,91,Bandage Roll,piece
+12267,91,Gauze Pack,pack
+12268,91,Syringe 5ml,piece
+12269,91,Syringe 10ml,piece
+12270,91,IV Cannula,piece
+12271,91,ORS Electrolyte Powder,sachet
+12272,91,Inhaler - Salbutamol,unit
+12273,91,Nebulizer Solution,ampoule
+12274,91,Antacid Liquid,bottle
+12275,91,Zinc Tablets,tablet
+12276,92,Paracetamol 500mg,tablet
+12277,92,Paracetamol 650mg,tablet
+12278,92,ORS Sachet,sachet
+12279,92,IV Normal Saline 0.9%,liter
+12280,92,IV Ringer Lactate,liter
+12281,92,IV Dextrose 5%,liter
+12282,92,Ibuprofen 400mg,tablet
+12283,92,Cetirizine 10mg,tablet
+12284,92,Azithromycin 500mg,tablet
+12285,92,Doxycycline 100mg,tablet
+12286,92,Amoxicillin 500mg,capsule
+12287,92,N95 Mask,piece
+12288,92,Surgical Mask,piece
+12289,92,Gloves (Latex),pair
+12290,92,Sanitizer 100ml,bottle
+12291,92,Bandage Roll,piece
+12292,92,Gauze Pack,pack
+12293,92,Syringe 5ml,piece
+12294,92,Syringe 10ml,piece
+12295,92,IV Cannula,piece
+12296,92,ORS Electrolyte Powder,sachet
+12297,92,Inhaler - Salbutamol,unit
+12298,92,Nebulizer Solution,ampoule
+12299,92,Antacid Liquid,bottle
+12300,92,Zinc Tablets,tablet
+12301,93,Paracetamol 500mg,tablet
+12302,93,Paracetamol 650mg,tablet
+12303,93,ORS Sachet,sachet
+12304,93,IV Normal Saline 0.9%,liter
+12305,93,IV Ringer Lactate,liter
+12306,93,IV Dextrose 5%,liter
+12307,93,Ibuprofen 400mg,tablet
+12308,93,Cetirizine 10mg,tablet
+12309,93,Azithromycin 500mg,tablet
+12310,93,Doxycycline 100mg,tablet
+12311,93,Amoxicillin 500mg,capsule
+12312,93,N95 Mask,piece
+12313,93,Surgical Mask,piece
+12314,93,Gloves (Latex),pair
+12315,93,Sanitizer 100ml,bottle
+12316,93,Bandage Roll,piece
+12317,93,Gauze Pack,pack
+12318,93,Syringe 5ml,piece
+12319,93,Syringe 10ml,piece
+12320,93,IV Cannula,piece
+12321,93,ORS Electrolyte Powder,sachet
+12322,93,Inhaler - Salbutamol,unit
+12323,93,Nebulizer Solution,ampoule
+12324,93,Antacid Liquid,bottle
+12325,93,Zinc Tablets,tablet
+12326,94,Paracetamol 500mg,tablet
+12327,94,Paracetamol 650mg,tablet
+12328,94,ORS Sachet,sachet
+12329,94,IV Normal Saline 0.9%,liter
+12330,94,IV Ringer Lactate,liter
+12331,94,IV Dextrose 5%,liter
+12332,94,Ibuprofen 400mg,tablet
+12333,94,Cetirizine 10mg,tablet
+12334,94,Azithromycin 500mg,tablet
+12335,94,Doxycycline 100mg,tablet
+12336,94,Amoxicillin 500mg,capsule
+12337,94,N95 Mask,piece
+12338,94,Surgical Mask,piece
+12339,94,Gloves (Latex),pair
+12340,94,Sanitizer 100ml,bottle
+12341,94,Bandage Roll,piece
+12342,94,Gauze Pack,pack
+12343,94,Syringe 5ml,piece
+12344,94,Syringe 10ml,piece
+12345,94,IV Cannula,piece
+12346,94,ORS Electrolyte Powder,sachet
+12347,94,Inhaler - Salbutamol,unit
+12348,94,Nebulizer Solution,ampoule
+12349,94,Antacid Liquid,bottle
+12350,94,Zinc Tablets,tablet
+12351,95,Paracetamol 500mg,tablet
+12352,95,Paracetamol 650mg,tablet
+12353,95,ORS Sachet,sachet
+12354,95,IV Normal Saline 0.9%,liter
+12355,95,IV Ringer Lactate,liter
+12356,95,IV Dextrose 5%,liter
+12357,95,Ibuprofen 400mg,tablet
+12358,95,Cetirizine 10mg,tablet
+12359,95,Azithromycin 500mg,tablet
+12360,95,Doxycycline 100mg,tablet
+12361,95,Amoxicillin 500mg,capsule
+12362,95,N95 Mask,piece
+12363,95,Surgical Mask,piece
+12364,95,Gloves (Latex),pair
+12365,95,Sanitizer 100ml,bottle
+12366,95,Bandage Roll,piece
+12367,95,Gauze Pack,pack
+12368,95,Syringe 5ml,piece
+12369,95,Syringe 10ml,piece
+12370,95,IV Cannula,piece
+12371,95,ORS Electrolyte Powder,sachet
+12372,95,Inhaler - Salbutamol,unit
+12373,95,Nebulizer Solution,ampoule
+12374,95,Antacid Liquid,bottle
+12375,95,Zinc Tablets,tablet
+12376,96,Paracetamol 500mg,tablet
+12377,96,Paracetamol 650mg,tablet
+12378,96,ORS Sachet,sachet
+12379,96,IV Normal Saline 0.9%,liter
+12380,96,IV Ringer Lactate,liter
+12381,96,IV Dextrose 5%,liter
+12382,96,Ibuprofen 400mg,tablet
+12383,96,Cetirizine 10mg,tablet
+12384,96,Azithromycin 500mg,tablet
+12385,96,Doxycycline 100mg,tablet
+12386,96,Amoxicillin 500mg,capsule
+12387,96,N95 Mask,piece
+12388,96,Surgical Mask,piece
+12389,96,Gloves (Latex),pair
+12390,96,Sanitizer 100ml,bottle
+12391,96,Bandage Roll,piece
+12392,96,Gauze Pack,pack
+12393,96,Syringe 5ml,piece
+12394,96,Syringe 10ml,piece
+12395,96,IV Cannula,piece
+12396,96,ORS Electrolyte Powder,sachet
+12397,96,Inhaler - Salbutamol,unit
+12398,96,Nebulizer Solution,ampoule
+12399,96,Antacid Liquid,bottle
+12400,96,Zinc Tablets,tablet
+12401,97,Paracetamol 500mg,tablet
+12402,97,Paracetamol 650mg,tablet
+12403,97,ORS Sachet,sachet
+12404,97,IV Normal Saline 0.9%,liter
+12405,97,IV Ringer Lactate,liter
+12406,97,IV Dextrose 5%,liter
+12407,97,Ibuprofen 400mg,tablet
+12408,97,Cetirizine 10mg,tablet
+12409,97,Azithromycin 500mg,tablet
+12410,97,Doxycycline 100mg,tablet
+12411,97,Amoxicillin 500mg,capsule
+12412,97,N95 Mask,piece
+12413,97,Surgical Mask,piece
+12414,97,Gloves (Latex),pair
+12415,97,Sanitizer 100ml,bottle
+12416,97,Bandage Roll,piece
+12417,97,Gauze Pack,pack
+12418,97,Syringe 5ml,piece
+12419,97,Syringe 10ml,piece
+12420,97,IV Cannula,piece
+12421,97,ORS Electrolyte Powder,sachet
+12422,97,Inhaler - Salbutamol,unit
+12423,97,Nebulizer Solution,ampoule
+12424,97,Antacid Liquid,bottle
+12425,97,Zinc Tablets,tablet
+12426,98,Paracetamol 500mg,tablet
+12427,98,Paracetamol 650mg,tablet
+12428,98,ORS Sachet,sachet
+12429,98,IV Normal Saline 0.9%,liter
+12430,98,IV Ringer Lactate,liter
+12431,98,IV Dextrose 5%,liter
+12432,98,Ibuprofen 400mg,tablet
+12433,98,Cetirizine 10mg,tablet
+12434,98,Azithromycin 500mg,tablet
+12435,98,Doxycycline 100mg,tablet
+12436,98,Amoxicillin 500mg,capsule
+12437,98,N95 Mask,piece
+12438,98,Surgical Mask,piece
+12439,98,Gloves (Latex),pair
+12440,98,Sanitizer 100ml,bottle
+12441,98,Bandage Roll,piece
+12442,98,Gauze Pack,pack
+12443,98,Syringe 5ml,piece
+12444,98,Syringe 10ml,piece
+12445,98,IV Cannula,piece
+12446,98,ORS Electrolyte Powder,sachet
+12447,98,Inhaler - Salbutamol,unit
+12448,98,Nebulizer Solution,ampoule
+12449,98,Antacid Liquid,bottle
+12450,98,Zinc Tablets,tablet

@@ -1,4 +1,10 @@
-import { pgTable, serial, text, integer, timestamp } from "drizzle-orm/pg-core";
+import {
+	pgTable,
+	serial,
+	text,
+	integer,
+	timestamp,
+} from "drizzle-orm/pg-core";
 
 export const hospital = pgTable("hospital", {
 	hospital_id: serial("hospital_id").primaryKey(),
@@ -21,7 +27,7 @@ export const staff_schedules = pgTable("staff_schedules", {
 	staff_name: text("staff_name"),
 	specializations: text("specializations"),
 	shift_start: timestamp("shift_start"),
-	shift_end: timestamp("shift_e nd"),
+	shift_end: timestamp("shift_end"),
 	created_at: timestamp("created_at").defaultNow(),
 	updated_at: timestamp("updated_at").defaultNow(),
 });

@@ -1,0 +1,99 @@
+disease_id,crisis_id,disease_name,description,severity_level,symptoms,common_causes,peak_months
+1,1,Cholera,Acute diarrheal disease caused by contaminated water during immersion rituals,High,"Watery diarrhea, vomiting, dehydration, electrolyte loss","Contaminated water bodies, poor sanitation, crowded conditions",September-October
+2,1,Typhoid,Bacterial infection from contaminated food and water,High,"Sustained fever, weakness, abdominal pain, rose spots rash",Contaminated food/water from poor sanitation,August-October
+3,1,Hepatitis A,Liver infection transmitted through contaminated water,Medium,"Jaundice, abdominal pain, fever, loss of appetite","Fecal-oral transmission, contaminated water",August-October
+4,1,Gastroenteritis,Inflammation of stomach and intestines from contaminated food/water,Medium,"Diarrhea, vomiting, abdominal cramps, nausea","Bacterial/viral pathogens (E.coli, Rotavirus, Salmonella)",August-October
+5,1,Leptospirosis,Bacterial infection from contact with contaminated water and sewage,High,"Fever, muscle pain, headache, jaundice, kidney damage","Contact with infected water, rat urine contamination",August-October
+6,1,Skin Infections (Bacterial/Fungal),Infections from water immersion and crowded conditions,Low,"Itching, redness, pustules, fungal rash","Prolonged water contact, poor hygiene, wound exposure",September-October
+7,1,Respiratory Tract Infections,Upper respiratory infections from crowding and wet conditions,Low,"Cough, sore throat, runny nose, sneezing","Viral transmission, close contact, humidity",September-October
+8,1,Fever (Undifferentiated),Fever from various pathogens in crowded settings,Low,"Elevated temperature, body aches, fatigue",Viral/bacterial transmission in crowds,September-October
+9,1,Dehydration,"Loss of body fluids from diarrhea, vomiting, or heat exposure",Medium,"Dry mouth, dizziness, fatigue, reduced urination","Diarrhea, vomiting, inadequate fluid intake",September-October
+10,1,Crowded Injury,Physical injuries from crowd surges and pushing,Low,"Bruising, sprains, fractures, trampling injuries","Crowd density, pushing, stampede",September-October
+11,2,Burn Injuries,Thermal injuries from firecracker explosions and mishandling,High,"Pain, blistering, skin loss, charring, tissue damage","Firecracker explosions, flame contact",October-November
+12,2,Eye Injuries,Ocular trauma from firecracker blasts and sparks,High,"Eye pain, redness, vision loss, corneal abrasion","Direct firecracker blast, spark contact",October-November
+13,2,Hearing Loss / Acoustic Trauma,Hearing damage from loud firecracker explosions,Medium,"Tinnitus, hearing loss, ear pain, vertigo",Loud noise exposure from firecrackers,October-November
+14,2,Hand/Finger Injuries,"Lacerations, amputations, fractures from firecracker handling",High,"Bleeding, severe pain, limb deformity, nerve damage","Firecracker premature explosion, direct contact",October-November
+15,2,Respiratory Irritation,Acute respiratory symptoms from smoke and pollutants,Medium,"Cough, sore throat, wheezing, breathlessness","Smoke inhalation, chemical pollutants from firecrackers",October-November
+16,2,Asthma Exacerbation,Worsening of asthma in susceptible individuals,High,"Severe coughing, chest tightness, wheezing, breathlessness","Air pollution, smoke inhalation",October-November
+17,2,Allergic Reactions,Allergies triggered by firecracker residues and fumes,Low,"Itching, hives, swelling, rhinitis",Chemical exposure from firecrackers,October-November
+18,2,Infection (Post-burn),Secondary bacterial infection of burn wounds,High,"Redness, pus, fever, wound drainage",Open burn wounds exposed to pathogens,October-November
+19,2,Shock/Systemic Response,Severe systemic reaction to extensive burns,High,"Hypotension, rapid pulse, organ failure","Large area burns, severe injury",October-November
+20,2,Ingestion of Toxic Firecracker Materials,Poisoning from accidental ingestion of firecracker residue,Medium,"Nausea, vomiting, abdominal pain, neurological symptoms",Accidental ingestion of heavy metals or chemicals,October-November
+21,3,Chemical Dermatitis,Skin irritation and allergic reaction from synthetic colored powder,Medium,"Redness, itching, blisters, urticaria, burning sensation","Synthetic dyes, lead-based colors, skin contact",February-March
+22,3,Respiratory Allergy,Allergic reactions from inhalation of color powder,Medium,"Sneezing, runny nose, nasal congestion, rhinitis","Powder inhalation, particulate matter",February-March
+23,3,Eye Irritation / Conjunctivitis,Ocular irritation from color powder contact,Medium,"Redness, watering, pain, blurred vision, inflammation","Colored powder in eyes, chemical irritants",February-March
+24,3,Asthma Exacerbation,Asthma flare-up from powder inhalation,High,"Wheezing, chest tightness, breathlessness, cough","Fine powder particles, chemical irritants",February-March
+25,3,Chemical Poisoning (Heavy Metals),"Systemic poisoning from lead, cadmium, or other heavy metals in colors",High,"Nausea, vomiting, neurological effects, kidney damage","Lead-based colors, contaminated dyes",February-March
+26,3,Allergic Contact Dermatitis,Delayed hypersensitivity reaction to color dyes,Medium,"Rash, blistering, severe itching, oozing lesions",Allergic reaction to specific dyes,February-March
+27,3,Photodermatitis,Skin reaction worsened by sun exposure with residual colors,Low,"Exaggerated sunburn, hyperpigmentation, inflammation","Sun exposure on colored skin, phototoxic reactions",February-March
+28,3,Scalp Irritation / Hair Damage,Irritation and damage to scalp and hair from colored powder,Low,"Itching, flaking, hair loss, chemical burns","Chemical dyes on scalp, prolonged contact",February-March
+29,3,Gastrointestinal Upset,GI symptoms from ingestion of color particles,Low,"Nausea, vomiting, diarrhea, abdominal discomfort",Accidental ingestion of colored powder,February-March
+30,4,Sprain/Strain,Ligament injuries and muscle strains from dancing,Low,"Joint pain, swelling, bruising, limited movement","Excessive dancing, sudden movements, uneven floor",September-October
+31,4,Fractures,Bone fractures from falls during dance events,Medium,"Pain, swelling, deformity, inability to move","Falls, collisions, impact injuries",September-October
+32,4,Muscle Cramps,Involuntary muscle contractions from overexertion,Low,"Muscle tightness, pain, temporary paralysis","Prolonged dancing, electrolyte loss, dehydration",September-October
+33,4,Dehydration,Loss of body fluids and electrolytes from excessive sweating,Medium,"Dry mouth, dizziness, fatigue, reduced urination","Prolonged dancing, inadequate fluid intake, heat",September-October
+34,4,Heat Exhaustion,Excessive body heat with systemic effects,Medium,"Dizziness, nausea, weakness, heavy sweating, headache",Prolonged physical exertion in heat,September-October
+35,4,Heat Stroke,Life-threatening condition with high body temperature,High,"High fever, confusion, loss of consciousness, no sweating","Extreme heat, prolonged exertion, failure of cooling",September-October
+36,4,Tendonitis,Inflammation of tendons from repetitive dancing,Low,"Localized pain, swelling, stiffness","Repetitive motion, overuse",September-October
+37,4,Blister Formation,Fluid-filled blisters on feet from dancing,Low,"Painful blisters, redness, potential infection","Friction from shoes, prolonged walking/dancing",September-October
+38,4,Respiratory Distress,Breathing difficulties during intense dancing,Low,"Shortness of breath, rapid breathing, chest tightness","Physical exertion, poor cardiovascular fitness",September-October
+39,4,Dizziness/Syncope,Fainting or dizziness from exertion or dehydration,Medium,"Lightheadedness, fainting, loss of balance","Dehydration, low blood pressure, overexertion",September-October
+40,5,Asthma Exacerbation,Acute worsening of asthma from poor air quality,High,"Severe wheezing, chest tightness, breathlessness, cough","Particulate matter, nitrogen dioxide, ozone",October-February
+41,5,Chronic Obstructive Pulmonary Disease (COPD),Exacerbation of COPD from air pollution,High,"Cough, mucus production, breathlessness, chest tightness","PM2.5, PM10, air pollutants",October-February
+42,5,Acute Bronchitis,Inflammation of airways from pollution exposure,Medium,"Persistent cough, mucus, wheezing, chest discomfort","Air pollution, particulate matter",October-February
+43,5,Allergic Rhinitis,Nasal allergies triggered by air pollutants,Low,"Sneezing, nasal congestion, runny nose, itching","Particulate matter, dust, pollutants",October-February
+44,5,Allergic Conjunctivitis,Eye inflammation from pollutants in air,Low,"Eye redness, watering, itching, burning","Particulates, allergens in polluted air",October-February
+45,5,Acute Respiratory Infection,Upper respiratory tract infection aggravated by pollution,Medium,"Sore throat, cough, runny nose, fever","Viral infection, compromised immune from pollution",October-February
+46,5,Myocardial Infarction (Heart Attack),Acute heart attack triggered or worsened by air pollution,High,"Chest pain, shortness of breath, sweating, dizziness",Air pollution stress on cardiac system,October-February
+47,5,Stroke,Cerebrovascular event linked to air pollution,High,"Sudden weakness, speech difficulty, facial drooping",Systemic inflammation from pollution,October-February
+48,5,Lung Cancer (Long-term),Increased cancer risk from chronic pollution exposure,High,"Persistent cough, chest pain, hemoptysis",Long-term PM2.5 and carcinogen exposure,October-February
+49,5,Headache/Migraine,Headaches triggered by air pollution,Low,"Headache, lightheadedness, fatigue","Hypoxia, chemical sensitivities to pollutants",October-February
+50,6,Dengue Fever,Mosquito-borne viral infection with high fever and systemic effects,High,"High fever, joint pain, muscle pain, rash, headache","Aedes mosquito bite, stagnant water",June-October
+51,6,Dengue Hemorrhagic Fever,Severe form of dengue with hemorrhagic complications,High,"Bleeding, low platelet count, shock, organ damage","Secondary dengue infection, viral severity",June-October
+52,6,Chikungunya,Mosquito-borne virus causing fever and joint pain,Medium,"Fever, joint pain (long-lasting), rash, muscle pain","Aedes mosquito bite, insufficient vector control",June-October
+53,6,Zika Virus,Mosquito-borne virus with neurological complications,Medium,"Fever, rash, joint pain, neurological effects",Aedes mosquito transmission,June-October
+54,6,Measles,Highly contagious viral disease with characteristic rash,Medium,"Fever, cough, Koplik spots, maculopapular rash",Measles virus airborne transmission,January-April
+55,6,Rubella,Contagious viral infection with mild fever and rash,Low,"Fever, rash, lymphadenopathy, joint pain",Rubella virus airborne droplets,February-April
+56,6,Chickenpox,Highly contagious viral infection with characteristic blistering,Medium,"Fever, itchy vesicular rash, malaise",Varicella-zoster virus airborne transmission,December-March
+57,6,Mumps,Viral infection causing parotitis and systemic effects,Low,"Fever, parotid swelling, headache, meningitis risk",Mumps virus airborne transmission,January-May
+58,6,Enterovirus Infection,Viral infection causing fever and systemic symptoms,Low,"Fever, sore throat, rash, myalgia",Enterovirus transmission via respiratory/fecal-oral,August-October
+59,6,Viral Hemorrhagic Fever,Severe viral infection with bleeding manifestations,High,"High fever, bleeding, organ failure, shock","Specific viral pathogens (Ebola, etc.)",Year-round
+60,7,Influenza (Seasonal Flu),Acute viral respiratory disease common during winter,Medium,"Fever, cough, sore throat, muscle aches, fatigue","Influenza virus (H1N1, H3N2) airborne transmission",November-February
+61,7,Influenza Pneumonia,Severe complication with lung infection,High,"Cough, dyspnea, chest pain, hemoptysis",Secondary bacterial or primary viral pneumonia,November-February
+62,7,Acute Exacerbation of Asthma,Asthma flare triggered by influenza infection,High,"Severe wheezing, breathlessness, chest tightness",Viral inflammation of airways,November-February
+63,7,Myositis,Muscle inflammation during severe influenza,Medium,"Severe muscle pain, swelling, dark urine",Viral myositis from influenza,November-February
+64,7,Encephalitis,Severe complication with brain inflammation,High,"Altered mental status, seizures, coma",Viral encephalitis from influenza,November-February
+65,7,Sinusitis,Inflammation of sinuses following influenza,Low,"Facial pain, nasal congestion, headache",Post-viral inflammation,November-February
+66,7,Otitis Media,Ear infection as complication of influenza,Low,"Ear pain, hearing loss, drainage",Secondary infection after flu,November-February
+67,7,Myocarditis,Heart muscle inflammation from influenza,High,"Chest pain, dyspnea, arrhythmia, cardiogenic shock",Viral infection of cardiac muscle,November-February
+68,7,Secondary Bacterial Infection,Bacterial superinfection following influenza,High,"Return of fever, increased purulent sputum","Streptococcus pneumoniae, Staphylococcus aureus",November-February
+69,8,Heat Stroke,Life-threatening condition from prolonged outdoor exposure,High,"High fever, confusion, lack of sweating, loss of consciousness","Prolonged sun exposure, crowding, inadequate hydration",All months (depends on season)
+70,8,Heat Exhaustion,Excessive heat with systemic effects from exertion,Medium,"Dizziness, nausea, headache, weakness, heavy sweating","Outdoor standing, sun exposure, dehydration",All months
+71,8,Dehydration,Loss of body fluids and electrolytes,Medium,"Dry mouth, dizziness, fatigue, reduced urination",Inadequate fluid intake during long standing,All months
+72,8,Foot Injuries / Blisters,Injuries from prolonged standing and walking,Low,"Pain, swelling, blisters, inability to walk","Prolonged standing, friction from shoes",All months
+73,8,Crush Injury from Crowd,Traumatic injury from crowd surge,High,"Severe pain, fractures, internal bleeding, organ damage","Crowd surge, stampede, compression",All months
+74,8,Respiratory Tract Infection,Upper respiratory infection from crowded conditions,Low,"Cough, sore throat, runny nose, sneezing","Viral transmission, close contact",All months
+75,8,Gastrointestinal Illness,Food or water-borne illness from rally conditions,Medium,"Diarrhea, vomiting, abdominal cramps, nausea","Contaminated food/water, poor hygiene",All months
+76,8,Syncope (Fainting),Loss of consciousness from crowding or heat,Medium,"Dizziness, loss of consciousness, brief confusion","Dehydration, heat, low blood pressure",All months
+77,8,Traumatic Brain Injury,Head injury from crowd violence or falls,High,"Headache, confusion, memory loss, neurological signs","Head trauma, falls, crowd violence",All months
+78,8,Anxiety Disorder / Panic Attack,Mental health effects from crowd situations,Low,"Anxiety, rapid heartbeat, panic, hyperventilation","Crowd density, claustrophobia, trauma",All months
+79,9,Drug Intoxication,Health risks from recreational drug use,High,"Altered mental state, overdose, cardiac arrhythmia",Drug/alcohol abuse at venue,All months
+80,9,Acute Alcohol Intoxication,Excessive alcohol consumption with systemic effects,High,"Intoxication, hypothermia, respiratory depression",Excessive alcohol consumption,All months
+81,9,Substance Overdose,"Overdose of illicit drugs (opioids, stimulants)",High,"Loss of consciousness, respiratory depression, death risk","Drug overdose, unknown substance purity",All months
+82,9,Hearing Loss / Acoustic Trauma,Temporary or permanent hearing damage,Medium,"Tinnitus, hearing loss, ear fullness",Loud music exposure (>100 dB),All months
+83,9,Crowd Injury / Trampling,Trauma from crowd surges and stampedes,High,"Fractures, lacerations, crush injuries, internal bleeding","Crowd surge, mosh pit, panic",All months
+84,9,Dehydration,"Loss of fluids from dancing, heat, and alcohol",Medium,"Dry mouth, dizziness, fatigue, reduced urination","Inadequate fluid intake, sweating, alcohol",All months
+85,9,Communicable Disease (Respiratory),"Spread of colds, flu, COVID-19 in crowded venue",Medium,"Cough, sore throat, fever, runny nose",Airborne viral transmission,All months
+86,9,Sexually Transmitted Infection (STI),Transmission of STIs due to high-risk behavior,Medium,"Genital symptoms, discharge, pain",Unsafe sexual contact,All months
+87,9,Muscle Strain / Sprain,Injuries from dancing and physical contact,Low,"Muscle/joint pain, swelling, bruising","Excessive dancing, falls, collisions",All months
+88,9,Anxiety / Panic Attack,Mental health effects from crowd or substance use,Low,"Anxiety, rapid heartbeat, panic, hyperventilation","Crowd density, claustrophobia, drug effects",All months
+89,10,COVID-19 (Acute Infection),Acute respiratory disease from SARS-CoV-2 infection,High,"Fever, dry cough, loss of taste/smell, difficulty breathing","SARS-CoV-2 airborne transmission, close contact",All months
+90,10,COVID-19 (Severe),Severe respiratory disease requiring hospitalization,High,"Severe dyspnea, hypoxemia, acute respiratory distress","Severe viral infection, comorbidities",All months
+91,10,COVID-19 (Critical),Life-threatening COVID-19 with organ failure,High,"Septic shock, multiple organ failure, death risk","Severe infection, cytokine storm",All months
+92,10,Long COVID / Post-COVID Syndrome,Persistent symptoms lasting weeks to months after infection,Medium,"Fatigue, cognitive dysfunction, breathlessness, pain","Post-viral sequelae, persistent inflammation",All months
+93,10,COVID-19 Associated Pneumonia,Severe pneumonia as complication of COVID-19,High,"Productive cough, dyspnea, hypoxemia, chest pain","Viral pneumonia, secondary bacterial infection",All months
+94,10,COVID-19 Myocarditis,Heart inflammation from COVID-19,High,"Chest pain, dyspnea, arrhythmia, shock","Viral carditis, inflammation",All months
+95,10,COVID-19 Thrombosis,Blood clots as complication of COVID-19,High,"Chest pain, leg swelling, stroke symptoms",Hypercoagulable state from inflammation,All months
+96,10,COVID-19 Associated Encephalitis,Brain inflammation from COVID-19,High,"Altered mental status, seizures, neurological symptoms",Viral invasion or immune response,All months
+97,10,Multisystem Inflammatory Syndrome (MIS-C/MIS-A),Severe multi-organ inflammatory response,High,"Fever, rash, organ dysfunction, shock",Post-viral immune dysregulation,All months
+98,10,COVID-19 Secondary Bacterial Infection,Bacterial superinfection in COVID-19 patients,High,"Return of fever, increased respiratory symptoms","Secondary bacterial infection (S. aureus, etc.)",All months

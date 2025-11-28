@@ -1,0 +1,11 @@
+crisis_id,crisis_name,crisis_tag,description,severity_level
+1,Ganpati Visarjan / Durga Puja,festival,"Large crowd gatherings, water immersion rituals, noise exposure, chemical colors, and drowning risks.",High
+2,Diwali,festival,"Firecracker-related burns, respiratory issues due to pollution spike, accidents, and eye injuries.",High
+3,Holi,festival,"Chemical color exposure, allergic reactions, alcohol-related injuries, and festival-related trauma.",Medium
+4,Navratri / Dandiya,festival,"Long dance events causing dehydration, sprains, and crowd-related injuries.",Low
+5,Air Pollution & AQI Spike,environmental,"Polluted air leading to asthma attacks, COPD issues, cardiac stress, and eye irritation.",High
+6,Viral Fever Outbreak,outbreak,Community-wide spread of viral fevers due to weather patterns or contaminated water.,Medium
+7,Influenza Season,outbreak,Flu spike during winter causing respiratory complications and hospitalization.,Medium
+8,Political Rally,local,"Injuries, dehydration, respiratory issues due to large crowds and long hours.",Medium
+9,Concert / Music Festival,local,"Drug intoxication, dehydration, crowd injuries.",Medium
+10,COVID-19 Pandemic,disease,"Global viral outbreak causing respiratory illness, lockdowns, overwhelmed hospitals, and social disruption.",High
