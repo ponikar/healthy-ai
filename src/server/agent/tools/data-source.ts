@@ -70,38 +70,12 @@ Based on this historical data, analyze and provide:
 1. Potential health threats and diseases that could occur
 2. Risk factors and vulnerable populations
 3. Recommended medical supplies and supplements needed
-
-Return ONLY a JSON object with this structure:
-{
-  "threats": ["threat1", "threat2"],
-  "risk_factors": ["factor1", "factor2"],
-  "recommended_supplies": ["supply1", "supply2"]
-}`;
+`;
 
 			const llmResponse = await Model.llm.invoke(analysisPrompt);
-			const analysisContent =
-				typeof llmResponse.content === "string"
-					? llmResponse.content
-					: JSON.stringify(llmResponse.content);
-
-			let analysis = {
-				threats: [],
-				risk_factors: [],
-				recommended_supplies: [],
-			};
-
-			try {
-				const jsonMatch = analysisContent.match(/\{[\s\S]*\}/);
-				if (jsonMatch) {
-					analysis = JSON.parse(jsonMatch[0]);
-				}
-			} catch (e) {
-				console.error("Failed to parse LLM analysis:", e);
-			}
 
 			return JSON.stringify({
-				results: allData,
-				analysis,
+				output: llmResponse.content,
 			});
 		} catch (error) {
 			console.error("Error in search_crisis_data tool:", error);

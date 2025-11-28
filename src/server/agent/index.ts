@@ -61,10 +61,11 @@ const createToolNode =
 		const result = await toolNode.invoke(state);
 
 		const lastMessage = result.messages[result.messages.length - 1];
+
 		try {
 			const toolResponse = JSON.parse(lastMessage.content);
 			if (toolResponse.error) {
-				console.log(`${tool.name} failed.`);
+				console.log(`${tool.name} failed. ${toolResponse.error}`);
 				return {
 					...result,
 					retry_count: (state.retry_count || 0) + 1,
@@ -84,44 +85,107 @@ const createToolNode =
 
 const graph = new StateGraph(AgentState.initialState)
 	.addNode("agent", async (state) => {
-		console.log("[agent -> node]:");
 		const { messages } = state;
-		const response = await llm.invoke(messages);
+		const llmWithTools = Model.llm.bindTools(tools);
+		const response = await llmWithTools.invoke(messages);
 		return { messages: [response], retry_count: 0 };
 	})
 	.addNode("search_crisis_data", createToolNode(searchCrisisDataTool))
+	.addNode("agent_search_to_decide", async (state) => {
+		const llm = Model.llm.bindTools([decideComponents]);
+		const response = await llm.invoke(state.messages);
+		return {
+			messages: [
+				{
+					...response,
+					tool_calls: [
+						{
+							type: "tool_call",
+							id: "calling_tool_decide_components",
+							name: "decide_components",
+							args: {
+								query: response.content,
+								payload: {},
+							},
+						},
+					],
+				},
+			],
+		};
+	})
 	.addNode("decide_components", createToolNode(decideComponents))
-	.addNode("get_component_docs", createToolNode(getComponentDocs))
-	.addNode("generate_component", createToolNode(generateComponent))
-	.addConditionalEdges("agent", (state) => {
-		const { messages } = state;
-		const lastMessage = messages[messages.length - 1];
+	.addNode("agent_decide_to_docs", async (state) => {
+		const llm = Model.llm.bindTools([getComponentDocs]);
+		const response = await llm.invoke(state.messages);
 
+		console.log("getComponentDocs ->", response);
+		return {
+			messages: [
+				{
+					...response,
+					tool_calls: [
+						{
+							type: "tool_call",
+							id: "calling_tool_get_component_docs",
+							name: "get_component_docs",
+							args: {
+								components: ["button", "input", "form", "select"],
+							},
+						},
+					],
+				},
+			],
+		};
+	})
+	.addNode("get_component_docs", createToolNode(getComponentDocs))
+	.addNode("agent_docs_to_generate", async (state) => {
+		const llm = Model.llm.bindTools([generateComponent]);
+		const response = await llm.invoke(state.messages);
+
+		console.log("GENERATE COMPONENT", response);
+		return {
+			messages: [
+				{
+					...response,
+					tool_calls: [
+						{
+							type: "tool_call",
+							id: "calling_tool_generate_component",
+							name: "generate_component",
+							args: {
+								query: response.content,
+								payload: {},
+								documentation: response.content,
+							},
+						},
+					],
+				},
+			],
+		};
+	})
+	.addNode("generate_component", createToolNode(generateComponent))
+
+	.addConditionalEdges("agent", (state) => {
+		const lastMessage = state.messages.at(-1);
 		if (
-			lastMessage &&
 			lastMessage instanceof AIMessage &&
-			lastMessage.tool_calls?.length &&
-			lastMessage.tool_calls.length > 0
+			lastMessage.tool_calls?.[0]?.name === "search_crisis_data"
 		) {
-			const toolName = lastMessage?.tool_calls[0]?.name;
-			if (toolName) {
-				console.log(`[routing]: ${toolName}`);
-				return toolName;
-			}
+			return "search_crisis_data";
 		}
 		return END;
 	})
-	.addEdge(START, "agent")
-	.addConditionalEdges("search_crisis_data", (state) =>
-		handleToolError(state, "search_crisis_data"),
-	)
-	.addEdge("decide_components", "get_component_docs")
-	.addEdge("get_component_docs", "generate_component")
-	.addEdge("generate_component", "agent");
 
-const agent = graph.compile({
-	interruptBefore: [],
-});
+	.addEdge("search_crisis_data", "agent_search_to_decide")
+	.addEdge("agent_search_to_decide", "decide_components")
+	.addEdge("decide_components", "agent_decide_to_docs")
+	.addEdge("agent_decide_to_docs", "get_component_docs")
+	.addEdge("get_component_docs", "agent_docs_to_generate")
+	.addEdge("agent_docs_to_generate", "generate_component")
+	.addEdge("generate_component", END) // Final output
+	.addEdge(START, "agent");
+
+const agent = graph.compile();
 
 const result = await agent.invoke({
 	messages: [
@@ -134,4 +198,4 @@ const result = await agent.invoke({
 
 // 6. Get response
 const lastMessage = result.messages[result.messages.length - 1];
-console.log("🏥 Healthcare Agent:", lastMessage?.content);
+console.log("🏥 DONE:");
