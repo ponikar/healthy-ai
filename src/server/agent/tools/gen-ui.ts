@@ -1,124 +1,57 @@
 import { DynamicStructuredTool } from "@langchain/core/tools";
 import { z } from "zod";
 import { Model } from "../model";
-import { UI_SYSTEM_PROMPT, componentInfo } from "../prompt/ui";
+import fs from "node:fs";
+import path from "node:path";
 
-export const decideComponents = new DynamicStructuredTool({
-	name: "decide_components",
-	description: "Analyze user query and decide which Shadcn components to use.",
+const markdown = fs.readFileSync(path.join(__dirname, "./ui.md"), {
+	encoding: "utf-8",
+});
+
+export const generateUI = new DynamicStructuredTool({
+	name: "generate_ui",
+	description: "Generate dynamic UI components to visualize data",
 	schema: z.object({
 		query: z.string().describe("User's UI generation request"),
-		payload: z.object({}).describe("Additional data/configuration"),
+		data_summary: z
+			.string()
+			.describe("The complete data/summary to visualize from previous tool"),
 	}),
 	func: async (input) => {
-		const { query, payload } = decideComponents.schema.parse(input);
+		const { query, data_summary } = generateUI.schema.parse(input);
 
-		const prompt = `Based on this user request, decide which Shadcn UI components to use.
+		console.log("GENERATING UI FOR:", query);
+
+		const prompt = `You are a generative UI generator. Create React component code to visualize the provided data.
+
+Available UI Components:
+${markdown}
+
+Task: Generate a React functional component that displays the following data in a clear, visual way.
 
 User Query: ${query}
-Payload: ${JSON.stringify(payload, null, 2)}
 
-Available components: ${UI_SYSTEM_PROMPT}
+Data to Visualize:
+${data_summary}
 
-Return ONLY a JSON array of component names to use. Example: ["button", "input", "form"]`;
+Output Requirements:
+- Return ONLY the React component code
+- Use appropriate UI components from the list above
+- Make it visually appealing and easy to understand
+- Include proper imports at the top
+- GIVE OUTPUT IN THE PLAIN CODE, NO FORMAT NEEDED
+- DO NOT ADD IMPORTANT STATEMENT
+
+Example Output Format:
+const Component = () => {
+  return <Card>...</Card>
+}`;
 
 		const response = await Model.llm.invoke(prompt);
 		const content =
 			typeof response.content === "string"
 				? response.content
 				: JSON.stringify(response.content);
-
-		const jsonMatch = content.match(/\[[\s\S]*\]/);
-		if (jsonMatch) {
-			return jsonMatch[0];
-		}
-
-		return JSON.stringify([]);
-	},
-});
-
-export const getComponentDocs = new DynamicStructuredTool({
-	name: "get_component_docs",
-	description: "Get documentation for a list of component names.",
-	schema: z.object({
-		components: z
-			.array(z.string())
-			.describe("Array of component names to get docs for"),
-	}),
-	func: async (input) => {
-		const { components } = getComponentDocs.schema.parse(input);
-
-		const docs: Record<string, unknown> = {};
-
-		for (const componentName of components) {
-			const normalizedName = componentName.toLowerCase().trim();
-			const matchedKey = Object.keys(componentInfo).find((key) =>
-				new RegExp(key, "i").test(normalizedName),
-			);
-
-			if (matchedKey) {
-				docs[matchedKey] =
-					componentInfo[matchedKey as keyof typeof componentInfo];
-			}
-		}
-
-		return JSON.stringify(docs);
-	},
-});
-
-export const generateComponent = new DynamicStructuredTool({
-	name: "generate_component",
-	description:
-		"Generate React component code using user query, payload, and component documentation.",
-	schema: z.object({
-		query: z.string().describe("Original user query"),
-		payload: z.object(z.string()).describe("Additional data/configuration"),
-		documentation: z
-			.object(z.any())
-			.describe("Component documentation from previous step"),
-	}),
-	func: async (input) => {
-		const { query, payload, documentation } =
-			generateComponent.schema.parse(input);
-
-		try {
-			const prompt = `${UI_SYSTEM_PROMPT}
-
-User Query: ${query}
-Payload: ${JSON.stringify(payload, null, 2)}
-Component Documentation: ${JSON.stringify(documentation, null, 2)}
-
-Return ONLY a JSON object with this exact structure:
-{
-  "type": "component-type-name",
-  "code": "full-component-code-here"
-}
-
-The code should be a complete, ready-to-use React component.`;
-
-			const response = await Model.llm.invoke(prompt);
-
-			const content =
-				typeof response.content === "string"
-					? response.content
-					: JSON.stringify(response.content);
-
-			const jsonMatch = content.match(/\{[\s\S]*\}/);
-			if (jsonMatch) {
-				const parsed = JSON.parse(jsonMatch[0]);
-				return JSON.stringify(parsed);
-			}
-
-			return JSON.stringify({
-				type: "generated-component",
-				code: content,
-			});
-		} catch (error) {
-			console.error("Error in generate_component tool:", error);
-			return JSON.stringify({
-				error: true,
-				message: "Failed to generate component.",
-			});
-		}
+		return content;
 	},
 });

@@ -36,22 +36,14 @@ List of available tools:
 - search_crisis_data: Search for crisis and relevant area history.
   - Params: { query: string } (e.g., "Mumbai flood 2005")
 
-- fetch_historical_crisis_data: Fetch detailed data from SQL database.
-  - Params: { crisis_type: string, location: string }
+- generate_ui: Generate dynamic UI components to visualize data.
+  - Params: { query: string, data_summary: string }
+  - Pass the complete output from search_crisis_data as the data_summary parameter
+  - Example: { query: "Visualize crisis data", data_summary: "...complete search results..." }
 
-UI Generation Tools (use these sequentially to generate React components):
-- decide_components: Analyze user's UI request and decide which Shadcn components to use.
-  - Params: { query: string, payload: object } (payload is optional context)
-  - Returns: Array of component names (e.g., ["button", "input"])
-
-- get_component_docs: Get documentation for selected components.
-  - Params: { components: string[] } (Array of component names from previous step)
-
-- generate_component: Generate final React component code.
-  - Params: { query: string, payload: object, documentation: object }
-  - Returns: JSON with { type: string, code: string }
-
-Note: UI generation tools work sequentially. Call decide_components first, then the system will automatically call the other tools in order.
+Workflow: 
+1. Call search_crisis_data with user's query
+2. Call generate_ui passing the search results as data_summary
 
 Be data-driven, analytical, and provide actionable hospital management insights.`),
 };

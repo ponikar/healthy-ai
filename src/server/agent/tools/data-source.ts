@@ -28,6 +28,8 @@ export const searchCrisisDataTool = new DynamicStructuredTool({
 				return JSON.stringify({ message: "No relevant crisis found." });
 			}
 
+			console.log("CRISIS RESULTS", crisisResults);
+
 			// 2. finding area history for each crisis
 			const areaStore = new QdrantVectorStore(Model.embeddings, {
 				client: vectorDb,
@@ -73,6 +75,8 @@ Based on this historical data, analyze and provide:
 `;
 
 			const llmResponse = await Model.llm.invoke(analysisPrompt);
+
+			console.log("LLM RESPONSE", llmResponse.content);
 
 			return JSON.stringify({
 				output: llmResponse.content,
