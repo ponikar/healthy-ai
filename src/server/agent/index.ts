@@ -17,10 +17,20 @@ import {
 } from "@langchain/langgraph";
 import { Model } from "./model";
 import { AgentState } from "./state";
-import { searchCrisisDataTool } from "./tools";
+import {
+	searchCrisisDataTool,
+	decideComponents,
+	getComponentDocs,
+	generateComponent,
+} from "./tools";
 import type { DynamicStructuredTool } from "@langchain/core/tools";
 
-const tools = [searchCrisisDataTool];
+const tools = [
+	searchCrisisDataTool,
+	decideComponents,
+	getComponentDocs,
+	generateComponent,
+];
 
 const llm = Model.llm.bindTools(tools);
 
@@ -79,7 +89,10 @@ const graph = new StateGraph(AgentState.initialState)
 		const response = await llm.invoke(messages);
 		return { messages: [response], retry_count: 0 };
 	})
-	.addNode("search_tool", createToolNode(searchCrisisDataTool))
+	.addNode("search_crisis_data", createToolNode(searchCrisisDataTool))
+	.addNode("decide_components", createToolNode(decideComponents))
+	.addNode("get_component_docs", createToolNode(getComponentDocs))
+	.addNode("generate_component", createToolNode(generateComponent))
 	.addConditionalEdges("agent", (state) => {
 		const { messages } = state;
 		const lastMessage = messages[messages.length - 1];
@@ -91,17 +104,20 @@ const graph = new StateGraph(AgentState.initialState)
 			lastMessage.tool_calls.length > 0
 		) {
 			const toolName = lastMessage?.tool_calls[0]?.name;
-			if (toolName === "search_crisis_data") {
-				console.log("[routing]: search_tool");
-				return "search_tool";
+			if (toolName) {
+				console.log(`[routing]: ${toolName}`);
+				return toolName;
 			}
 		}
 		return END;
 	})
 	.addEdge(START, "agent")
-	.addConditionalEdges("search_tool", (state) =>
-		handleToolError(state, "search_tool"),
-	);
+	.addConditionalEdges("search_crisis_data", (state) =>
+		handleToolError(state, "search_crisis_data"),
+	)
+	.addEdge("decide_components", "get_component_docs")
+	.addEdge("get_component_docs", "generate_component")
+	.addEdge("generate_component", "agent");
 
 const agent = graph.compile({
 	interruptBefore: [],

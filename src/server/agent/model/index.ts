@@ -35,6 +35,9 @@ tool calling function. You must check tool calling specs and pass arguments if r
 List of available tools: 
 - search_crisis_data: this tool will help you get the past historical crisis data for a given area.
 - fetch_historical_crisis_data: this tool will help you to fetch sophisticated and detailed data from SQL database. 
+- decide_components: Analyze user's UI request and decide which Shadcn components to use. Returns array of component names.
+- get_component_docs: Get documentation for selected components. Takes array of component names from previous step.
+- generate_component: Generate final React component code. Takes original query, payload, and documentation from previous steps.
 
 
 Be data-driven, analytical, and provide actionable hospital management insights.`),
