@@ -23,43 +23,48 @@ export const searchCrisisDataTool = new DynamicStructuredTool({
 				collectionName: VECTOR_COLLECTION_NAME.CRISIS,
 			});
 
-			const crisisResults = await crisisStore.similaritySearch(query, 1);
+			const crisisResults = await crisisStore.similaritySearch(query, 3);
 			if (!crisisResults.length) {
 				return JSON.stringify({ message: "No relevant crisis found." });
 			}
 
-			const crisisData = crisisResults[0];
-			if (!crisisData) {
-				return JSON.stringify({ message: "No relevant crisis found." });
-			}
-			const crisisId = crisisData.metadata.crisis_id;
-			console.log("Found crisis_id:", crisisId);
-
-			// 2. finding area history here
+			// 2. finding area history for each crisis
 			const areaStore = new QdrantVectorStore(Model.embeddings, {
 				client: vectorDb,
 				collectionName: VECTOR_COLLECTION_NAME.AREA_HISTORY,
 			});
 
-			const areaResults = await areaStore.similaritySearch(query, 8, {
-				must: [
-					{
-						key: "crisis_id",
-						match: {
-							value: crisisId,
-						},
-					},
-				],
-			});
+			const allData = await Promise.all(
+				crisisResults.map(async (crisis) => {
+					const areaResults = await areaStore.similaritySearch(
+						crisis.pageContent,
+						3,
+					);
+					return {
+						crisis: crisis.metadata,
+						area_history: areaResults.map((r) => ({
+							content: r.pageContent,
+							metadata: r.metadata,
+						})),
+					};
+				}),
+			);
 
 			// 3. Analyze threats and suggest supplements using LLM
 			const analysisPrompt = `You are a healthcare crisis analyst. Analyze the following historical crisis data and provide actionable insights.
 
-Crisis Information:
-${JSON.stringify(crisisData.metadata, null, 2)}
+Data Context:
+${allData
+	.map(
+		(d, i) => `
+Crisis ${i + 1}:
+${JSON.stringify(d.crisis, null, 2)}
 
-Historical Area Data:
-${areaResults.map((r, i) => `${i + 1}. ${r.pageContent}\nMetadata: ${JSON.stringify(r.metadata)}`).join("\n\n")}
+Related Area History:
+${d.area_history.map((h) => `- ${h.content} (Meta: ${JSON.stringify(h.metadata)})`).join("\n")}
+`,
+	)
+	.join("\n---\n")}
 
 Based on this historical data, analyze and provide:
 1. Potential health threats and diseases that could occur
@@ -95,11 +100,7 @@ Return ONLY a JSON object with this structure:
 			}
 
 			return JSON.stringify({
-				crisis: crisisData.metadata,
-				area_history: areaResults.map((r) => ({
-					content: r.pageContent,
-					metadata: r.metadata,
-				})),
+				results: allData,
 				analysis,
 			});
 		} catch (error) {
