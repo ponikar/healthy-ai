@@ -1,6 +1,7 @@
 import { DynamicStructuredTool } from "@langchain/core/tools";
 import { z } from "zod";
 import { Model } from "../model";
+import { UI_SYSTEM_PROMPT, componentInfo } from "../prompt/ui";
 
 export const getShadcnDocumentation = new DynamicStructuredTool({
 	name: "get_shadcn_documentation",
@@ -9,18 +10,21 @@ export const getShadcnDocumentation = new DynamicStructuredTool({
 		componentName: z.string().describe("Name of the Shadcn component"),
 	}),
 	func: async ({ componentName }) => {
-		const placeholderDocs = {
-			componentName,
-			description: `Shadcn ${componentName} component - A reusable UI component built with Radix UI and Tailwind CSS`,
-			usage: `import { ${componentName} } from "~/components/ui/${componentName.toLowerCase()}";\n\nexport default function Example() {\n  return <${componentName}>Content</${componentName}>;\n}`,
-			commonProps: [
-				"className: string - Additional CSS classes",
-				"children: ReactNode - Component content",
-			],
-			note: "Full documentation will be available in iteration 2",
-		};
+		const normalizedName = componentName.toLowerCase().trim();
+		const matchedKey = Object.keys(componentInfo).find((key) =>
+			new RegExp(key, "i").test(normalizedName),
+		);
 
-		return JSON.stringify(placeholderDocs);
+		if (matchedKey) {
+			return JSON.stringify(
+				componentInfo[matchedKey as keyof typeof componentInfo],
+			);
+		}
+
+		return JSON.stringify({
+			error: true,
+			message: `Component "${componentName}" not found. Available: ${Object.keys(componentInfo).join(", ")}`,
+		});
 	},
 });
 
@@ -38,19 +42,10 @@ export const generateShadcnComponent = new DynamicStructuredTool({
 	}),
 	func: async ({ query, payload }) => {
 		try {
-			const prompt = `You are a React/TypeScript expert specializing in Shadcn UI components.
+			const prompt = `${UI_SYSTEM_PROMPT}
 
 User Query: ${query}
 Payload: ${JSON.stringify(payload, null, 2)}
-
-Available Shadcn components: button, card, input, dialog, dropdown-menu, select, table, form, badge, alert, avatar, checkbox, radio-group, switch, tabs, accordion, sheet, drawer, popover, toast, calendar, command, and more.
-
-Generate a production-ready React component that:
-1. Uses Shadcn UI components from ~/components/ui/*
-2. Follows TypeScript best practices
-3. Includes proper imports
-4. Uses the payload data appropriately
-5. Is clean, minimal, and follows modern React patterns
 
 Return ONLY a JSON object with this exact structure:
 {
