@@ -6,6 +6,8 @@ import {
 	timestamp,
 	pgEnum,
 	real,
+	uuid,
+	boolean,
 } from "drizzle-orm/pg-core";
 
 // Define ENUMs first
@@ -42,7 +44,7 @@ export const severityLevelEnum = pgEnum("severity_level", [
 
 export const supplement = pgTable("supplement", {
 	supplement_id: serial("supplement_id").primaryKey(),
-	disease_id: integer("disease_id").references(() => disease.disease_id),
+	disease_id: integer("disease_id"), // Note: disease table is commented out
 	supplement_name: text("supplement_name").notNull(),
 	unit: text("unit"),
 	created_at: timestamp("created_at").defaultNow(),
@@ -98,25 +100,44 @@ export const userRoleEnum = pgEnum("user_role", [
 	"Management",
 	"Doctor",
 	"Nurse",
-	"Inventory Manager",
 	"SysAdmin",
 ]);
 
-// Users table
+// Users table - syncs with Supabase auth.users
 export const users = pgTable("users", {
-	user_id: serial("user_id").primaryKey(),
+	user_id: uuid("user_id").primaryKey(), // Supabase auth user ID
 	name: text("name").notNull(),
 	email: text("email").notNull().unique(),
 	// ENUM role column
 	role: userRoleEnum("role").notNull(),
-	// Optional: Link user to hospital if users belong to specific hospitals
+	// Link user to hospital (required for Management, Doctor, Nurse)
 	hospital_id: integer("hospital_id").references(() => hospital.hospital_id),
 	// Permissions stored as CSV string
 	permissions: text("permissions").notNull(),
-	// example:
-	// "view_dashboard,manage_users,manage_inventory,view_reports"
+	// Track if user is active
+	is_active: boolean("is_active").default(true).notNull(),
 	created_at: timestamp("created_at").defaultNow(),
 	updated_at: timestamp("updated_at").defaultNow(),
+});
+
+// Invitations table for role-based invitations
+export const invitations = pgTable("invitations", {
+	invitation_id: serial("invitation_id").primaryKey(),
+	email: text("email").notNull(),
+	role: userRoleEnum("role").notNull(),
+	hospital_id: integer("hospital_id").references(() => hospital.hospital_id),
+	// Who sent the invitation
+	invited_by: uuid("invited_by")
+		.notNull()
+		.references(() => users.user_id),
+	// Invitation token for email verification
+	token: text("token").notNull().unique(),
+	// Status: pending, accepted, expired
+	status: text("status").default("pending").notNull(), // 'pending' | 'accepted' | 'expired'
+	// Expiration date
+	expires_at: timestamp("expires_at").notNull(),
+	accepted_at: timestamp("accepted_at"),
+	created_at: timestamp("created_at").defaultNow(),
 });
 
 
