@@ -1,4 +1,4 @@
-import Link from "next/link";
+"use client";
 
 import { getCurrentUser } from "~/server/auth";
 import { api, HydrateClient } from "~/trpc/server";
@@ -38,7 +38,7 @@ export default async function Home() {
             </div>
           </div>
         </div>
-      </main>
-    </HydrateClient>
+      </div>
+    </div>
   );
 }
