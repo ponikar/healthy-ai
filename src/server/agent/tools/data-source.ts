@@ -99,12 +99,17 @@ Output Requirements:
 - GIVE OUTPUT IN THE PLAIN CODE, NO FORMAT NEEDED
 - DO NOT ADD IMPORT STATEMENT.
 
+FUNCTION NAME MUST BE Component
+
 Example Output Format:
-const Component = () => {
+
+function Component() {
   return <Card>...</Card>
 }`;
 
 			const response = await Model.llm.invoke(prompt);
+
+			console.log("UI RESPONSE", response.content);
 
 			return JSON.stringify({
 				output: response.content,

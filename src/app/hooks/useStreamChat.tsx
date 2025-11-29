@@ -55,6 +55,7 @@ export function useAgentStream() {
                             setToolCalls(chunk.toolCalls);
                         }
                     } else if (chunk.type === "tool") {
+                        console.log("🔧 Tool result received:", chunk.node);
                         setToolResults((prev) => [
                             ...prev,
                             {
@@ -74,6 +75,13 @@ export function useAgentStream() {
         }
     }, []);
 
+    const reset = useCallback(() => {
+        setContent("");
+        setToolCalls([]);
+        setToolResults([]);
+        setError(null);
+    }, []);
+
     return {
         content,
         toolCalls,
@@ -81,5 +89,6 @@ export function useAgentStream() {
         isStreaming,
         error,
         sendMessage,
+        reset,
     };
 }

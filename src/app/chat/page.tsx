@@ -7,6 +7,7 @@ import { Header } from "~/components/header";
 import { Button } from "~/components/ui/button";
 import { Textarea } from "~/components/ui/textarea";
 import { useAgentStream } from "~/app/hooks/useStreamChat";
+import { RenderUI } from "~/components/RenderUI";
 
 interface Message {
     id: string;
@@ -30,9 +31,8 @@ export default function ChatPage() {
 
     useEffect(() => {
         scrollToBottom();
-    }, [messages, content]);
+    }, [messages, content, toolResults]);
 
-    // Handle initial query from URL (only once)
     useEffect(() => {
         const initialQuery = searchParams.get("q");
         if (initialQuery && !hasProcessedInitialQuery.current) {
@@ -51,7 +51,6 @@ export default function ChatPage() {
     useEffect(() => {
         if (!isStreaming && content) {
             setMessages((prev) => {
-                // Avoid duplicates - check if last message is already this content
                 const lastMsg = prev[prev.length - 1];
                 if (lastMsg?.role === "assistant" && lastMsg.content === content) {
                     return prev;
@@ -93,8 +92,6 @@ export default function ChatPage() {
 
     return (
         <div className="min-h-screen flex flex-col">
-            {/* Header */}
-            <Header />
 
             {/* Chat Header */}
             <div className="sticky top-[73px] z-10 glass-card border-b border-white/20 backdrop-blur-xl">
@@ -157,28 +154,9 @@ export default function ChatPage() {
                                                 <span>
                                                     {toolCalls[toolCalls.length - 1]?.name ===
                                                         "search_crisis_data"
-                                                        ? "Searching crisis records..."
+                                                        ? "Thinking..."
                                                         : "Processing..."}
                                                 </span>
-                                            </div>
-                                        )}
-
-                                        {/* Tool Results */}
-                                        {toolResults.length > 0 && (
-                                            <div className="space-y-2">
-                                                {toolResults.map((result, i) => (
-                                                    <div
-                                                        key={i}
-                                                        className="glass-widget rounded-lg px-3 py-2 text-xs"
-                                                    >
-                                                        <div className="font-medium text-emerald-700 mb-1">
-                                                            {result.node}
-                                                        </div>
-                                                        <pre className="text-emerald-900/70 overflow-auto">
-                                                            {JSON.stringify(result.data, null, 2)}
-                                                        </pre>
-                                                    </div>
-                                                ))}
                                             </div>
                                         )}
 
@@ -190,11 +168,30 @@ export default function ChatPage() {
                                                 </p>
                                             </div>
                                         ) : (
-                                            /* Loading State (before first token) */
                                             <div className="glass-widget rounded-xl px-4 py-2.5 w-fit">
                                                 <Loader2 className="w-5 h-5 text-emerald-700 animate-spin" />
                                             </div>
                                         )}
+                                    </div>
+                                </div>
+                            )}
+
+                            {/* Tool Results - NOW OUTSIDE isStreaming */}
+                            {toolResults.length > 0 && (
+                                <div className="flex justify-start w-full">
+                                    <div className="max-w-[80%] space-y-2">
+                                        {toolResults.map((result, i) => (
+                                            <div
+                                                key={i}
+                                                className="glass-widget rounded-lg px-4 py-3"
+                                            >
+                                                <div className="flex items-center gap-2 text-xs font-medium text-emerald-700 mb-2">
+                                                    <Wrench className="w-3 h-3" />
+                                                    Generated UI Component
+                                                </div>
+                                                <RenderUI code={result.data} />
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
                             )}

@@ -15,9 +15,13 @@ type StreamChunk = {
 export async function POST(req: NextRequest) {
 	const { message } = await req.json();
 
+	console.log("MESSAGE", message);
+
 	const encoder = new TextEncoder();
 	const stream = new TransformStream();
 	const writer = stream.writable.getWriter();
+
+	console.log("1", 1);
 
 	const sendEvent = async (chunk: StreamChunk) => {
 		await writer.write(encoder.encode(`data: ${JSON.stringify(chunk)}\n\n`));
@@ -30,14 +34,17 @@ export async function POST(req: NextRequest) {
 				{ streamMode: "updates" },
 			);
 
+			console.log("GRAPH stream DONE", graphStream);
+
 			for await (const update of graphStream) {
+				console.log("UPDATE", update);
 				const [nodeName, nodeOutput] = Object.entries(update)[0] || [];
 				if (!nodeName || !nodeOutput) continue;
 
 				const output = nodeOutput as any;
 
-				// Handle agent node
 				if (nodeName === "agent" && output?.messages) {
+					// Handle agent node
 					const lastMessage = output.messages[output.messages.length - 1];
 
 					if (lastMessage instanceof AIMessage) {
@@ -66,22 +73,34 @@ export async function POST(req: NextRequest) {
 					}
 				}
 
-				// Handle search_crisis_data tool
+				console.log("NODE NAME", nodeName, output.messages);
+
 				if (nodeName === "search_crisis_data" && output?.messages) {
 					const toolMessage = output.messages[output.messages.length - 1];
+
+					let toolData: any;
+					try {
+						const parsed =
+							typeof toolMessage.content === "string"
+								? JSON.parse(toolMessage.content)
+								: toolMessage.content;
+
+						toolData = parsed.output || parsed;
+					} catch (e) {
+						toolData = toolMessage.content;
+					}
+
 					await sendEvent({
 						type: "tool",
 						node: "search_crisis_data",
-						data:
-							typeof toolMessage.content === "string"
-								? JSON.parse(toolMessage.content)
-								: toolMessage.content,
+						data: toolData,
 					});
 				}
 			}
 
 			await writer.close();
 		} catch (error: any) {
+			console.log("SOMETHING WRONG!", error);
 			await sendEvent({
 				type: "error",
 				content: error.message,
