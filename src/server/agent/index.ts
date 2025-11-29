@@ -22,20 +22,6 @@ import type { DynamicStructuredTool } from "@langchain/core/tools";
 
 const tools = [searchCrisisDataTool];
 
-const llm = Model.llm.bindTools(tools);
-
-const handleToolError = (state: any, toolName: string) => {
-	if ((state.retry_count || 0) > 0) {
-		if (state.retry_count > 2) {
-			console.log(`Max retries for ${toolName}. Ending.`);
-			return END;
-		}
-		console.log(`Retrying ${toolName}...`);
-		return toolName;
-	}
-	return "agent";
-};
-
 const createToolNode =
 	(tool: DynamicStructuredTool) =>
 	async (
@@ -51,16 +37,17 @@ const createToolNode =
 		const result = await toolNode.invoke(state);
 
 		const lastMessage = result.messages[result.messages.length - 1];
+
 		try {
 			const toolResponse = JSON.parse(lastMessage.content);
 			if (toolResponse.error) {
-				console.log(`${tool.name} failed.`);
+				console.log(`${tool.name} failed. ${toolResponse.error}`);
 				return {
 					...result,
 					retry_count: (state.retry_count || 0) + 1,
 				};
 			}
-		} catch (e) {
+		} catch (_e) {
 			// content is not valid JSON, treat as error
 			console.log(`${tool.name} failed with invalid output.`);
 			return {
@@ -74,48 +61,26 @@ const createToolNode =
 
 const graph = new StateGraph(AgentState.initialState)
 	.addNode("agent", async (state) => {
-		console.log("[agent -> node]:");
 		const { messages } = state;
-		const response = await llm.invoke(messages);
+		const llmWithTools = Model.llm.bindTools(tools);
+		const response = await llmWithTools.invoke(messages);
 		return { messages: [response], retry_count: 0 };
 	})
-	.addNode("search_tool", createToolNode(searchCrisisDataTool))
-	.addConditionalEdges("agent", (state) => {
-		const { messages } = state;
-		const lastMessage = messages[messages.length - 1];
+	.addNode("search_crisis_data", createToolNode(searchCrisisDataTool))
 
-		if (
-			lastMessage &&
-			lastMessage instanceof AIMessage &&
-			lastMessage.tool_calls?.length &&
-			lastMessage.tool_calls.length > 0
-		) {
-			const toolName = lastMessage?.tool_calls[0]?.name;
+	.addConditionalEdges("agent", (state) => {
+		const lastMessage = state.messages.at(-1);
+
+		if (lastMessage instanceof AIMessage && lastMessage.tool_calls?.length) {
+			const toolName = lastMessage.tool_calls[0]?.name;
 			if (toolName === "search_crisis_data") {
-				console.log("[routing]: search_tool");
-				return "search_tool";
+				return "search_crisis_data";
 			}
 		}
 		return END;
 	})
-	.addEdge(START, "agent")
-	.addConditionalEdges("search_tool", (state) =>
-		handleToolError(state, "search_tool"),
-	);
 
-const agent = graph.compile({
-	interruptBefore: [],
-});
+	.addEdge("search_crisis_data", END)
+	.addEdge(START, "agent");
 
-const result = await agent.invoke({
-	messages: [
-		Model.systemPrompt,
-		new HumanMessage(
-			"Hi, can you please list out all the past historical data of mumbai andheri, ganpati festival",
-		),
-	],
-});
-
-// 6. Get response
-const lastMessage = result.messages[result.messages.length - 1];
-console.log("🏥 Healthcare Agent:", lastMessage?.content);
+export const agent = graph.compile();
