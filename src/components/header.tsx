@@ -1,15 +1,48 @@
 "use client";
 
-import { User, LogOut } from "lucide-react";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { LogOut } from "lucide-react";
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
 import { Button } from "./ui/button";
 import { Avatar, AvatarFallback } from "./ui/avatar";
+import { createSupabaseBrowser } from "~/lib/supabase/client";
+import { toast } from "sonner";
 
 
-export function Header() {
-    const handleSignOut = () => {
-        // Sign out logic here
-        console.log("Signing out...");
+export function Header({ hideUserMenu = false }: { hideUserMenu?: boolean }) {
+    const router = useRouter();
+    const [userName, setUserName] = useState<string>("User");
+    const [userEmail, setUserEmail] = useState<string>("");
+
+    useEffect(() => {
+        const fetchUser = async () => {
+            const supabase = createSupabaseBrowser();
+            const { data: { user } } = await supabase.auth.getUser();
+
+            if (user) {
+                const fullName = user.user_metadata?.full_name;
+                setUserName(fullName || user.email?.split('@')[0] || "User");
+                setUserEmail(user.email || "");
+            }
+        };
+
+        if (!hideUserMenu) {
+            fetchUser();
+        }
+    }, [hideUserMenu]);
+
+    const handleSignOut = async () => {
+        try {
+            const supabase = createSupabaseBrowser();
+            await supabase.auth.signOut();
+            toast.success("Signed out successfully");
+            router.push("/auth/login");
+            router.refresh();
+        } catch (error) {
+            toast.error("Failed to sign out");
+            console.error("Sign out error:", error);
+        }
     };
 
     return (
@@ -24,33 +57,36 @@ export function Header() {
                 </div>
 
                 {/* User Menu */}
-                <Popover>
-                    <PopoverTrigger asChild>
-                        <Button
-                            type="button"
-                            variant="ghost"
-                            className="flex items-center gap-2 hover:bg-emerald-500/10 rounded-lg h-auto py-1.5 px-2"
-                        >
-                            <Avatar className="w-8 h-8">
-                                <AvatarFallback className="bg-emerald-100 text-emerald-700 text-sm">
-                                    <User className="w-4 h-4" />
-                                </AvatarFallback>
-                            </Avatar>
-                            <span className="text-sm font-medium text-emerald-900">John Doe</span>
-                        </Button>
-                    </PopoverTrigger>
-                    <PopoverContent align="end" className="w-48 p-2">
-                        <Button
-                            onClick={handleSignOut}
-                            variant="ghost"
-                            className="w-full justify-start gap-2 hover:bg-destructive/10 hover:text-destructive"
-                        >
-                            <LogOut className="w-4 h-4" />
-                            Sign Out
-                        </Button>
-                    </PopoverContent>
-                </Popover>
+                {!hideUserMenu && (
+                    <Popover>
+                        <PopoverTrigger asChild>
+                            <Button
+                                type="button"
+                                variant="ghost"
+                                className="flex items-center gap-2 hover:bg-emerald-500/10 rounded-lg h-auto py-1.5 px-2"
+                            >
+                                <Avatar className="w-8 h-8">
+                                    <AvatarFallback className="bg-emerald-100 text-emerald-700 text-sm">
+                                        {userName.charAt(0).toUpperCase()}
+                                    </AvatarFallback>
+                                </Avatar>
+                                <span className="text-sm font-medium text-emerald-900">{userName}</span>
+                            </Button>
+                        </PopoverTrigger>
+                        <PopoverContent align="end" className="w-48 p-2">
+                            <Button
+                                onClick={handleSignOut}
+                                variant="ghost"
+                                className="w-full justify-start gap-2 hover:bg-destructive/10 hover:text-destructive"
+                            >
+                                <LogOut className="w-4 h-4" />
+                                Sign Out
+                            </Button>
+                        </PopoverContent>
+                    </Popover>
+                )}
             </div>
         </header>
     );
 }
+

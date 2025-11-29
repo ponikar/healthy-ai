@@ -1,7 +1,6 @@
-"use client";
-
+import Link from "next/link";
 import { getCurrentUser } from "~/server/auth";
-import { api, HydrateClient } from "~/trpc/server";
+import { HydrateClient } from "~/trpc/server";
 
 export default async function Home() {
   const user = await getCurrentUser();
@@ -38,7 +37,7 @@ export default async function Home() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </main>
+    </HydrateClient>
   );
 }
