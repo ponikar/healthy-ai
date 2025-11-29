@@ -1,15 +1,27 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 import { Header } from "~/components/header";
 import { WeatherGreetingWidget } from "~/components/weather-greeting";
 import { Textarea } from "~/components/ui/textarea";
+import { createSupabaseBrowser } from "~/lib/supabase/client";
 
 export default function Home() {
     const [query, setQuery] = useState("");
     const router = useRouter();
+
+    useEffect(() => {
+        const checkAuth = async () => {
+            const supabase = createSupabaseBrowser();
+            const { data: { user } } = await supabase.auth.getUser();
+            if (!user) {
+                router.push("/auth/login");
+            }
+        };
+        checkAuth();
+    }, [router]);
 
     const handleSubmit = () => {
         if (query.trim()) {

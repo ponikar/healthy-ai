@@ -1,6 +1,7 @@
 import { NextRequest } from "next/server";
 import { HumanMessage, AIMessage } from "@langchain/core/messages";
 import { agent } from "~/server/agent";
+import { createSupabaseServer } from "~/server/supabase/server";
 
 export const runtime = "nodejs";
 
@@ -13,6 +14,20 @@ type StreamChunk = {
 };
 
 export async function POST(req: NextRequest) {
+	// Check authentication
+	const supabase = await createSupabaseServer();
+	const {
+		data: { user },
+		error,
+	} = await supabase.auth.getUser();
+
+	if (error || !user) {
+		return new Response(JSON.stringify({ error: "Unauthorized" }), {
+			status: 401,
+			headers: { "Content-Type": "application/json" },
+		});
+	}
+
 	const { messages } = await req.json();
 
 	console.log("MESSAGES", messages);

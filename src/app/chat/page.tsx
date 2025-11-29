@@ -8,6 +8,7 @@ import { Button } from "~/components/ui/button";
 import { Textarea } from "~/components/ui/textarea";
 import { useAgentStream } from "~/app/hooks/useStreamChat";
 import { RenderUI } from "~/components/RenderUI";
+import { createSupabaseBrowser } from "~/lib/supabase/client";
 
 interface Message {
     id: string;
@@ -22,6 +23,17 @@ export default function ChatPage() {
     const [input, setInput] = useState("");
     const messagesEndRef = useRef<HTMLDivElement>(null);
     const hasProcessedInitialQuery = useRef(false);
+
+    useEffect(() => {
+        const checkAuth = async () => {
+            const supabase = createSupabaseBrowser();
+            const { data: { user } } = await supabase.auth.getUser();
+            if (!user) {
+                router.push("/auth/login");
+            }
+        };
+        checkAuth();
+    }, [router]);
 
     const { content, toolCalls, toolResults, isStreaming, error, sendMessage } = useAgentStream();
 
