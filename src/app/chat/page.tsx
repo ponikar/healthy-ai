@@ -2,11 +2,11 @@
 
 import { useState, useEffect, useRef } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
-import { Send, ArrowLeft, Loader2 } from "lucide-react";
+import { Send, ArrowLeft, Loader2, Wrench } from "lucide-react";
 import { Header } from "~/components/header";
 import { Button } from "~/components/ui/button";
 import { Textarea } from "~/components/ui/textarea";
-
+import { useAgentStream } from "~/app/hooks/useStreamChat";
 
 interface Message {
     id: string;
@@ -19,8 +19,10 @@ export default function ChatPage() {
     const router = useRouter();
     const [messages, setMessages] = useState<Message[]>([]);
     const [input, setInput] = useState("");
-    const [isLoading, setIsLoading] = useState(false);
     const messagesEndRef = useRef<HTMLDivElement>(null);
+    const hasProcessedInitialQuery = useRef(false);
+
+    const { content, toolCalls, toolResults, isStreaming, error, sendMessage } = useAgentStream();
 
     const scrollToBottom = () => {
         messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -28,32 +30,47 @@ export default function ChatPage() {
 
     useEffect(() => {
         scrollToBottom();
-    }, [messages]);
+    }, [messages, content]);
 
+    // Handle initial query from URL (only once)
     useEffect(() => {
         const initialQuery = searchParams.get("q");
-        if (initialQuery) {
+        if (initialQuery && !hasProcessedInitialQuery.current) {
+            hasProcessedInitialQuery.current = true;
             const userMessage: Message = {
                 id: Date.now().toString(),
                 role: "user",
                 content: initialQuery,
             };
             setMessages([userMessage]);
-
-            // Simulate AI response
-            setTimeout(() => {
-                const aiMessage: Message = {
-                    id: (Date.now() + 1).toString(),
-                    role: "assistant",
-                    content: `I understand you're asking about "${initialQuery}". As your healthcare AI assistant, I'm here to help you with patient records, appointments, lab results, prescriptions, and more. How can I assist you further?`,
-                };
-                setMessages([userMessage, aiMessage]);
-            }, 1000);
+            void sendMessage(initialQuery);
         }
-    }, [searchParams]);
+    }, [searchParams, sendMessage]);
+
+    // Append completed assistant response to history
+    useEffect(() => {
+        if (!isStreaming && content) {
+            setMessages((prev) => {
+                // Avoid duplicates - check if last message is already this content
+                const lastMsg = prev[prev.length - 1];
+                if (lastMsg?.role === "assistant" && lastMsg.content === content) {
+                    return prev;
+                }
+
+                return [
+                    ...prev,
+                    {
+                        id: Date.now().toString(),
+                        role: "assistant",
+                        content: content,
+                    },
+                ];
+            });
+        }
+    }, [isStreaming, content]);
 
     const handleSubmit = async () => {
-        if (!input.trim() || isLoading) return;
+        if (!input.trim() || isStreaming) return;
 
         const userMessage: Message = {
             id: Date.now().toString(),
@@ -62,25 +79,15 @@ export default function ChatPage() {
         };
 
         setMessages((prev) => [...prev, userMessage]);
+        const messageToSend = input;
         setInput("");
-        setIsLoading(true);
-
-        // Simulate AI response
-        setTimeout(() => {
-            const aiMessage: Message = {
-                id: (Date.now() + 1).toString(),
-                role: "assistant",
-                content: `I've received your message: "${input}". I'm processing your request and will provide you with the most relevant healthcare information and assistance. This is a demo response - in production, this would connect to a real AI healthcare assistant.`,
-            };
-            setMessages((prev) => [...prev, aiMessage]);
-            setIsLoading(false);
-        }, 1500);
+        await sendMessage(messageToSend);
     };
 
     const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
         if (e.key === "Enter" && !e.shiftKey) {
             e.preventDefault();
-            handleSubmit();
+            void handleSubmit();
         }
     };
 
@@ -101,7 +108,9 @@ export default function ChatPage() {
                         <ArrowLeft className="w-5 h-5 text-emerald-700" />
                     </Button>
                     <div>
-                        <h1 className="text-xl font-semibold text-emerald-900">Healthcare AI Assistant</h1>
+                        <h1 className="text-xl font-semibold text-emerald-900">
+                            Healthcare AI Assistant
+                        </h1>
                         <p className="text-sm text-emerald-700/70">Always here to help</p>
                     </div>
                 </div>
@@ -109,34 +118,96 @@ export default function ChatPage() {
 
             {/* Messages */}
             <div className="flex-1 overflow-y-auto px-6 py-8">
-                <div className="max-w-4xl mx-auto space-y-3">
-                    {messages.length === 0 ? (
+                <div className="max-w-4xl mx-auto space-y-6">
+                    {messages.length === 0 && !isStreaming ? (
                         <div className="text-center py-12">
-                            <p className="text-emerald-700/70">Start a conversation with your healthcare AI assistant</p>
+                            <p className="text-emerald-700/70">
+                                Start a conversation with your healthcare AI assistant
+                            </p>
                         </div>
                     ) : (
-                        messages.map((message) => (
-                            <div
-                                key={message.id}
-                                className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}
-                            >
+                        <>
+                            {messages.map((message) => (
                                 <div
-                                    className={`max-w-[80%] rounded-xl px-4 py-2.5 ${message.role === "user"
-                                        ? "glass-card bg-gradient-to-br from-emerald-500/90 to-green-500/90 text-white"
-                                        : "glass-widget text-emerald-900"
+                                    key={message.id}
+                                    className={`flex ${message.role === "user" ? "justify-end" : "justify-start"
                                         }`}
                                 >
-                                    <p className="text-sm leading-relaxed whitespace-pre-wrap">{message.content}</p>
+                                    <div
+                                        className={`max-w-[80%] rounded-xl px-4 py-2.5 ${message.role === "user"
+                                            ? "glass-card bg-gradient-to-br from-emerald-500/90 to-green-500/90 text-white"
+                                            : "glass-widget text-emerald-900"
+                                            }`}
+                                    >
+                                        <p className="text-sm leading-relaxed whitespace-pre-wrap">
+                                            {message.content}
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        ))
-                    )}
-                    {isLoading && (
-                        <div className="flex justify-start">
-                            <div className="glass-widget rounded-xl px-4 py-2.5">
-                                <Loader2 className="w-5 h-5 text-emerald-700 animate-spin" />
-                            </div>
-                        </div>
+                            ))}
+
+                            {/* Streaming Message */}
+                            {isStreaming && (
+                                <div className="flex justify-start w-full">
+                                    <div className="max-w-[80%] space-y-2">
+                                        {/* Tool Activity Indicator */}
+                                        {toolCalls.length > 0 && (
+                                            <div className="flex items-center gap-2 text-xs text-emerald-600/80 bg-emerald-50/50 px-3 py-1.5 rounded-lg w-fit">
+                                                <Wrench className="w-3 h-3 animate-pulse" />
+                                                <span>
+                                                    {toolCalls[toolCalls.length - 1]?.name ===
+                                                        "search_crisis_data"
+                                                        ? "Searching crisis records..."
+                                                        : "Processing..."}
+                                                </span>
+                                            </div>
+                                        )}
+
+                                        {/* Tool Results */}
+                                        {toolResults.length > 0 && (
+                                            <div className="space-y-2">
+                                                {toolResults.map((result, i) => (
+                                                    <div
+                                                        key={i}
+                                                        className="glass-widget rounded-lg px-3 py-2 text-xs"
+                                                    >
+                                                        <div className="font-medium text-emerald-700 mb-1">
+                                                            {result.node}
+                                                        </div>
+                                                        <pre className="text-emerald-900/70 overflow-auto">
+                                                            {JSON.stringify(result.data, null, 2)}
+                                                        </pre>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        )}
+
+                                        {/* Streaming Content */}
+                                        {content ? (
+                                            <div className="glass-widget text-emerald-900 rounded-xl px-4 py-2.5">
+                                                <p className="text-sm leading-relaxed whitespace-pre-wrap">
+                                                    {content}
+                                                </p>
+                                            </div>
+                                        ) : (
+                                            /* Loading State (before first token) */
+                                            <div className="glass-widget rounded-xl px-4 py-2.5 w-fit">
+                                                <Loader2 className="w-5 h-5 text-emerald-700 animate-spin" />
+                                            </div>
+                                        )}
+                                    </div>
+                                </div>
+                            )}
+
+                            {/* Error Display */}
+                            {error && (
+                                <div className="flex justify-start">
+                                    <div className="max-w-[80%] glass-card bg-red-50/50 border border-red-200/50 rounded-xl px-4 py-2.5">
+                                        <p className="text-sm text-red-700">Error: {error}</p>
+                                    </div>
+                                </div>
+                            )}
+                        </>
                     )}
                     <div ref={messagesEndRef} />
                 </div>
@@ -151,16 +222,16 @@ export default function ChatPage() {
                             value={input}
                             onChange={(e) => setInput(e.target.value)}
                             onKeyDown={handleKeyDown}
-                            disabled={isLoading}
+                            disabled={isStreaming}
                             className="glass-input min-h-[60px] pr-12 text-base resize-none border-none focus-visible:ring-2 focus-visible:ring-emerald-500/30 rounded-lg placeholder:text-emerald-700/40"
                         />
                         <Button
                             onClick={handleSubmit}
-                            disabled={!input.trim() || isLoading}
+                            disabled={!input.trim() || isStreaming}
                             size="icon"
                             className="absolute bottom-5 right-5 h-8 w-8 bg-gradient-to-r from-emerald-500 to-green-500 hover:from-emerald-600 hover:to-green-600 text-white rounded-lg shadow-lg shadow-emerald-500/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                         >
-                            {isLoading ? (
+                            {isStreaming ? (
                                 <Loader2 className="w-4 h-4 animate-spin" />
                             ) : (
                                 <Send className="w-4 h-4" />

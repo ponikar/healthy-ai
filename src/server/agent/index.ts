@@ -17,24 +17,10 @@ import {
 } from "@langchain/langgraph";
 import { Model } from "./model";
 import { AgentState } from "./state";
-import { searchCrisisDataTool, generateUI } from "./tools";
+import { searchCrisisDataTool } from "./tools";
 import type { DynamicStructuredTool } from "@langchain/core/tools";
 
-const tools = [searchCrisisDataTool, generateUI];
-
-const llm = Model.llm.bindTools(tools);
-
-const handleToolError = (state: any, toolName: string) => {
-	if ((state.retry_count || 0) > 0) {
-		if (state.retry_count > 2) {
-			console.log(`Max retries for ${toolName}. Ending.`);
-			return END;
-		}
-		console.log(`Retrying ${toolName}...`);
-		return toolName;
-	}
-	return "agent";
-};
+const tools = [searchCrisisDataTool];
 
 const createToolNode =
 	(tool: DynamicStructuredTool) =>
@@ -81,37 +67,20 @@ const graph = new StateGraph(AgentState.initialState)
 		return { messages: [response], retry_count: 0 };
 	})
 	.addNode("search_crisis_data", createToolNode(searchCrisisDataTool))
-	.addNode("generate_ui", createToolNode(generateUI))
 
 	.addConditionalEdges("agent", (state) => {
 		const lastMessage = state.messages.at(-1);
+
 		if (lastMessage instanceof AIMessage && lastMessage.tool_calls?.length) {
 			const toolName = lastMessage.tool_calls[0]?.name;
 			if (toolName === "search_crisis_data") {
 				return "search_crisis_data";
 			}
-			if (toolName === "generate_ui") {
-				return "generate_ui";
-			}
 		}
 		return END;
 	})
 
-	.addEdge("search_crisis_data", "agent")
-	.addEdge("generate_ui", END)
+	.addEdge("search_crisis_data", END)
 	.addEdge(START, "agent");
 
-const agent = graph.compile();
-
-const result = await agent.invoke({
-	messages: [
-		Model.systemPrompt,
-		new HumanMessage(
-			"Hi, can you please list out all the past historical data of mumbai andheri, ganpati festival",
-		),
-	],
-});
-
-// 6. Get response
-const lastMessage = result.messages[result.messages.length - 1];
-console.log("🏥 DONE:", lastMessage);
+export const agent = graph.compile();
