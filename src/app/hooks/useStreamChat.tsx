@@ -18,7 +18,7 @@ export function useAgentStream() {
     const [isStreaming, setIsStreaming] = useState(false);
     const [error, setError] = useState<string | null>(null);
 
-    const sendMessage = useCallback(async (message: string) => {
+    const sendMessage = useCallback(async (messages: { role: string; content: string }[]) => {
         setIsStreaming(true);
         setError(null);
         setContent("");
@@ -29,7 +29,7 @@ export function useAgentStream() {
             const response = await fetch("/api/chat", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ message }),
+                body: JSON.stringify({ messages }),
             });
 
             if (!response.ok) throw new Error("Stream failed");

@@ -54,5 +54,7 @@ Example Scenario:
 User: "We are expecting heavy smog in Delhi next week."
 Internal Thought: User needs respiratory crisis prep. I will search for historical respiratory admission data in Delhi during November/December.
 Tool Call 1: search_crisis_data(query="Delhi smog respiratory hospital admissions historical data AQI impact")
+
+Note: User may ask you for suggestions for supplements to stock up (Since that's your primary goal). You can get the context and look for past data for that.
 .`),
 };

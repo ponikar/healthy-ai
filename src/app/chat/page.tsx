@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
-import { Send, ArrowLeft, Loader2, Wrench } from "lucide-react";
+import { Send, ArrowLeft, Loader2, Wrench, SquarePen } from "lucide-react";
 import { Header } from "~/components/header";
 import { Button } from "~/components/ui/button";
 import { Textarea } from "~/components/ui/textarea";
@@ -43,7 +43,7 @@ export default function ChatPage() {
                 content: initialQuery,
             };
             setMessages([userMessage]);
-            void sendMessage(initialQuery);
+            void sendMessage([userMessage]);
         }
     }, [searchParams, sendMessage]);
 
@@ -77,10 +77,10 @@ export default function ChatPage() {
             content: input,
         };
 
-        setMessages((prev) => [...prev, userMessage]);
-        const messageToSend = input;
+        const newMessages = [...messages, userMessage];
+        setMessages(newMessages);
         setInput("");
-        await sendMessage(messageToSend);
+        await sendMessage(newMessages);
     };
 
     const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
@@ -94,7 +94,7 @@ export default function ChatPage() {
         <div className="min-h-screen flex flex-col">
 
             {/* Chat Header */}
-            <div className="sticky top-[73px] z-10 glass-card border-b border-white/20 backdrop-blur-xl">
+            <div className="sticky z-10 glass-card border-b border-white/20 backdrop-blur-xl">
                 <div className="max-w-4xl mx-auto px-6 py-4 flex items-center gap-4">
                     <Button
                         onClick={() => router.push("/")}
@@ -104,12 +104,20 @@ export default function ChatPage() {
                     >
                         <ArrowLeft className="w-5 h-5 text-emerald-700" />
                     </Button>
-                    <div>
+                    <div className="flex-1">
                         <h1 className="text-xl font-semibold text-emerald-900">
                             Healthcare AI Assistant
                         </h1>
                         <p className="text-sm text-emerald-700/70">Always here to help</p>
                     </div>
+                    <Button
+                        onClick={() => router.push("/chat")}
+                        variant="ghost"
+                        size="icon"
+                        className="hover:bg-emerald-500/10 rounded-xl"
+                    >
+                        <SquarePen className="w-5 h-5 text-emerald-700" />
+                    </Button>
                 </div>
             </div>
 

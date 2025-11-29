@@ -13,15 +13,13 @@ type StreamChunk = {
 };
 
 export async function POST(req: NextRequest) {
-	const { message } = await req.json();
+	const { messages } = await req.json();
 
-	console.log("MESSAGE", message);
+	console.log("MESSAGES", messages);
 
 	const encoder = new TextEncoder();
 	const stream = new TransformStream();
 	const writer = stream.writable.getWriter();
-
-	console.log("1", 1);
 
 	const sendEvent = async (chunk: StreamChunk) => {
 		await writer.write(encoder.encode(`data: ${JSON.stringify(chunk)}\n\n`));
@@ -29,8 +27,17 @@ export async function POST(req: NextRequest) {
 
 	(async () => {
 		try {
+			const langchainMessages = messages.map(
+				(m: { role: string; content: string }) => {
+					if (m.role === "user") {
+						return new HumanMessage(m.content);
+					}
+					return new AIMessage(m.content);
+				},
+			);
+
 			const graphStream = await agent.stream(
-				{ messages: [new HumanMessage(message)] },
+				{ messages: langchainMessages },
 				{ streamMode: "updates" },
 			);
 
